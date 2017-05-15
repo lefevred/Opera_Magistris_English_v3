@@ -1,0 +1,74 @@
+<?xml version="1.1" encoding="windows-1252"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="rectangle" id="id30985709">
+            <rect x="81.0" y="61.0" width="818.0" height="295.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id30837683">
+            <rect x="81.0" y="61.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id9800226" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="100.0">\textbf{Closure}: For all $a$, $b$ in $S$, $a \times b$ is also in $S$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id33493840">
+            <rect x="81.0" y="121.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id11980401">
+            <rect x="81.0" y="180.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id27423302">
+            <rect x="81.0" y="239.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id15052151">
+            <rect x="81.0" y="298.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id18237651" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="160.0">\textbf{Associativity}: For all $a$, $b$, $c$ in $S$, the relation $(a\times b)\times c=a\times(b\times c)$ holds</text>
+        </g>
+        <g latexdraw:type="text" id="id19481002" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="219.0">\textbf{Identity element}: There exists the element $\color{red}{1}$ such that for each $a$ in $S$, ${\color{red}{1}}\times a=a\times{\color{red}{1}}=a$ holds.</text>
+        </g>
+        <g latexdraw:type="text" id="id15066955" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="280.0">\textbf{Inverse element}: For each $a$ in $S$, there exists an element $\color{blue}{1/a}$ such that $a\times({\color{blue}{1/a}})={\color{blue}{1/a}}\times a={\color{red}{1}}$</text>
+        </g>
+        <g latexdraw:type="text" id="id26723618" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="340.0">\textbf{Commutativity}: For all $a$, $b$ in $S$, the relation $a\times b=b\times a$ holds.</text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes/>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>NONE</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.5</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1932</latexdraw:width>
+                <latexdraw:height>1048</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>0.0</latexdraw:x>
+                <latexdraw:y>0.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

@@ -1,0 +1,213 @@
+<?xml version="1.1" encoding="windows-1252"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="rectangle" id="id19199089">
+            <rect x="80.0" y="61.0" width="818.0" height="294.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id2744076">
+            <rect x="81.0" y="61.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id14013419" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="100.0">\textbf{Closure}: For all $a$, $b$ in $S$, $a + b$ is also in $S$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id9746114">
+            <rect x="81.0" y="121.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id29547603">
+            <rect x="81.0" y="180.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id3245824">
+            <rect x="81.0" y="239.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id11975363">
+            <rect x="80.0" y="298.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id5334854" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="160.0">\textbf{Associativity}: For all $a$, $b$, $c$ in $S$, the relation $(a+ b)+ c=a+(b+ c)$ holds</text>
+        </g>
+        <g latexdraw:type="text" id="id30392693" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="219.0">\textbf{Identity element}: There exists the element $\color{red}{0}$ such that for each $a$ in $S$, ${\color{red}{0}}+ a=a+{\color{red}{0}}=a$ holds.</text>
+        </g>
+        <g latexdraw:type="text" id="id15364162" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="280.0">\textbf{Inverse element}: For each $a$ in $S$, there exists an element $\color{blue}{-a}$ such that $a+({\color{blue}{-a}})={\color{blue}{-a}}+ a={\color{red}{0}}$</text>
+        </g>
+        <g latexdraw:type="text" id="id28849190" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="340.0">\textbf{Commutativity}: For all $a$, $b$ in $S$, the relation $a+ b=b+ a$ holds.</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id13167291">
+            <rect x="80.0" y="410.0" width="818.0" height="294.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id23030759">
+            <rect x="80.0" y="410.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id16486974" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="449.0">\textbf{Closure}: For all $a$, $b$ in $S$, $a \times b$ is also in $S$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id12043669">
+            <rect x="80.0" y="470.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id12995551">
+            <rect x="80.0" y="529.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1682153">
+            <rect x="80.0" y="587.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id13656583">
+            <rect x="80.0" y="646.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id19705088" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="509.0">\textbf{Associativity}: For all $a$, $b$, $c$ in $S$, the relation $(a\times b)\times c=a\times(b\times c)$ holds</text>
+        </g>
+        <g latexdraw:type="text" id="id869493" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="568.0">\textbf{Identity element}: There exists the element $\color{red}{1}$ such that for each $a$ in $S$, ${\color{red}{1}}\times a=a\times{\color{red}{1}}=a$ holds.</text>
+        </g>
+        <g latexdraw:type="text" id="id964239" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="629.0">\textbf{Inverse element}: For each $a$ in $S$, there exists an element $\color{blue}{1/a}$ such that $a\times({\color{blue}{1/a}})={\color{blue}{1/a}}\times a={\color{red}{1}}$</text>
+        </g>
+        <g latexdraw:type="text" id="id23157927" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="689.0">\textbf{Commutativity}: For all $a$, $b$ in $S$, the relation $a\times b=b\times a$ holds.</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id23616588" transform="rotate(37.479718833068084) translate(-62.058151497958306 -664.9237763578826)">
+            <rect x="917.05" y="214.05" width="187.9" height="53.9"
+                latexdraw:borderPos="outer" stroke-width="0.1"
+                stroke="white" fill="#cccccc"/>
+        </g>
+        <g latexdraw:type="triangle" id="id32594798"
+            latexdraw:points="1060.0 270.0000000000002 1144.0 270.0000000000002 1144.0 351.0000000000002 1144.0 351.0000000000002" transform="rotate(127.48371836521933) translate(-1526.2167106856964 -1373.9163965140885)">
+            <polygon
+                points="1102.0,272.17241518939244 1142.5593592341647,350.0000000000002 1061.4406407658353,350.0000000000002"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#cccccc" fill="#cccccc"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id18291900">
+            <rect x="80.0" y="18.0" width="113.0" height="43.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id32635162">
+            <rect x="80.0" y="367.0" width="113.0" height="43.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id4095707" transform="rotate(327.92752278435603) translate(-442.8913293017557 450.32049432879444)">
+            <rect x="910.8524785462268" y="518.3231330458868"
+                width="187.90000000000023" height="53.9"
+                latexdraw:borderPos="outer" stroke-width="0.1"
+                stroke="white" fill="#cccccc"/>
+        </g>
+        <g latexdraw:type="triangle" id="id29328809"
+            latexdraw:points="1059.7145497402391 443.7870653181949 1143.7145497402391 443.7870653181949 1143.7145497402391 524.7870653181949 1143.7145497402391 524.7870653181949" transform="rotate(417.93152231650726) translate(-106.3868434721312 -1160.771852936449)">
+            <polygon
+                points="1101.7145497402391,445.9594805075871 1142.2739089744039,523.7870653181949 1061.1551905060744,523.7870653181949"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#cccccc" fill="#cccccc"/>
+        </g>
+        <g latexdraw:type="text" id="id2327759" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="49.0">$(S,+,0)$</text>
+        </g>
+        <g latexdraw:type="text" id="id16216824" fill="black" latexdraw:position="bl">
+            <text x="104.0" y="397.0">$(S,\times,0)$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id16973079">
+            <rect x="1155.0" y="273.0" width="818.0" height="294.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id4193930">
+            <rect x="1155.0" y="273.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id291296" fill="black" latexdraw:position="bl">
+            <text x="1174.0" y="312.0">\textbf{Closure}: For all $a$, $b$ in $A$, $a \star b$ is also in $A$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id33425028">
+            <rect x="1155.0" y="333.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1138365">
+            <rect x="1155.0" y="392.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id11689641">
+            <rect x="1155.0" y="450.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id9989974">
+            <rect x="1155.0" y="509.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id28638031" fill="black" latexdraw:position="bl">
+            <text x="1174.0" y="372.0">\textbf{Associativity}: For all $a$, $b$, $c$ in $A$, the relation $(a\star b)\star c=a\star(b\star c)$ holds</text>
+        </g>
+        <g latexdraw:type="text" id="id10397974" fill="black" latexdraw:position="bl">
+            <text x="1174.0" y="431.0">\textbf{Identity element}: There exists the element $\color{red}{e}$ such that for each $a$ in $A$, ${\color{red}{e}}\star a=a\star{\color{red}{e}}=a$ holds.</text>
+        </g>
+        <g latexdraw:type="text" id="id6757002" fill="black" latexdraw:position="bl">
+            <text x="1174.0" y="492.0">\textbf{Inverse element}: For each $a$ in $A$, there exists an element $\color{blue}{b}$ such that $a\star({\color{blue}{b}})={\color{blue}{b}}\star a={\color{red}{e}}$</text>
+        </g>
+        <g latexdraw:type="text" id="id19289761" fill="black" latexdraw:position="bl">
+            <text x="1174.0" y="552.0">\textbf{Commutativity}: For all $a$, $b$ in $A$, the relation $a\star b=b\star a$ holds.</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id7352889">
+            <rect x="1155.0" y="230.0" width="113.0" height="43.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id28039531" fill="black" latexdraw:position="bl">
+            <text x="1179.0" y="260.0">$(A,\star,e)$</text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes/>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>NONE</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.5</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1938</latexdraw:width>
+                <latexdraw:height>1048</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>-9.0</latexdraw:x>
+                <latexdraw:y>-9.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

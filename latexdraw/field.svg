@@ -1,0 +1,178 @@
+<?xml version="1.1" encoding="windows-1252"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="rectangle" id="id3212969">
+            <rect x="80.0" y="61.0" width="818.0" height="294.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id20400245">
+            <rect x="81.0" y="61.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id1899895" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="100.0">\textbf{Closure}: For all $a$, $b$ in $F$, $a + b$ is also in $F$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id25780449">
+            <rect x="81.0" y="121.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id20039296">
+            <rect x="81.0" y="180.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id362448">
+            <rect x="81.0" y="239.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id22384657">
+            <rect x="80.0" y="298.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id11109587" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="160.0">\textbf{Associativity}: For all $a$, $b$, $c$ in $F$, the relation $(a+ b)+ c=a+(b+ c)$ holds</text>
+        </g>
+        <g latexdraw:type="text" id="id17684889" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="220.0">\textbf{Identity element}: There exists the element $\color{red}{0}$ such that for each $a$ in $F$, ${\color{red}{0}}+ a=a+{\color{red}{0}}=a$ holds.</text>
+        </g>
+        <g latexdraw:type="text" id="id175779" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="280.0">\textbf{Inverse element}: For each $a$ in $F$, there exists an element $\color{blue}{-a}$ such that $a+({\color{blue}{-a}})={\color{blue}{-a}}+ a={\color{red}{0}}$</text>
+        </g>
+        <g latexdraw:type="text" id="id14731368" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="340.0">\textbf{Commutativity}: For all $a$, $b$ in $F$, the relation $a+ b=b+ a$ holds.</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id20269827">
+            <rect x="80.0" y="356.0" width="818.0" height="294.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id22437403">
+            <rect x="80.0" y="356.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id7727939" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="395.0">\textbf{Closure}: For all $a$, $b$ in $F$, $a \times b$ is also in $F$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id27057616">
+            <rect x="80.0" y="415.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id17647027">
+            <rect x="80.0" y="474.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id22459752">
+            <rect x="80.0" y="533.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id19207281">
+            <rect x="80.0" y="592.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id5109361" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="455.0">\textbf{Associativity}: For all $a$, $b$, $c$ in $F$, the relation $(a\times b)\times c=a\times(b\times c)$ holds</text>
+        </g>
+        <g latexdraw:type="text" id="id12155656" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="514.0">\textbf{Identity element}: There exists the element $\color{red}{1}$ such that for each $a$ in $F$, ${\color{red}{1}}\times a=a\times{\color{red}{1}}=a$ holds.</text>
+        </g>
+        <g latexdraw:type="text" id="id1961954" fill="black" latexdraw:position="bl">
+            <text x="99.0" y="575.0">\textbf{Inverse element}: For each $a$ in $F$, there exists an element $\color{blue}{1/a}$ such that $a\times({\color{blue}{1/a}})={\color{blue}{1/a}}\times a={\color{red}{1}}$</text>
+        </g>
+        <g latexdraw:type="text" id="id28788621" fill="black" latexdraw:position="bl">
+            <text x="97.0" y="631.0">\textbf{Commutativity}: For all $a$, $b$ in $F$, the relation $a\times b=b\times a$ holds.</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id8134346">
+            <rect x="80.0" y="18.0" width="179.0" height="43.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id7242738" fill="black" latexdraw:position="bl">
+            <text x="100.0" y="49.0">Field $(F,+,0,\times, 1)$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id7617444">
+            <rect x="899.0" y="61.0" width="72.0" height="295.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#00cccc"/>
+        </g>
+        <g latexdraw:type="text" id="id24538142" fill="black"
+            latexdraw:position="bl" transform="rotate(89.36715915992426) translate(-801.8013147631588 -1034.7066063090624)">
+            <text x="924.0" y="112.0">\textbf{Abelian Group} $F(+,0)$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id13081228">
+            <rect x="80.0" y="650.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id8602055">
+            <rect x="80.0" y="709.0" width="818.0" height="58.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#ccffff"/>
+        </g>
+        <g latexdraw:type="text" id="id21992669" fill="black" latexdraw:position="bl">
+            <text x="96.0" y="691.0">\textbf{Left distributivity}: For all $a$, $b$, $c$ in $F$, the equation $a\times(b+c)=(a\times b)+(a\times c)$ holds</text>
+        </g>
+        <g latexdraw:type="text" id="id13300092" fill="black" latexdraw:position="bl">
+            <text x="97.0" y="748.0">\textbf{Right distributivity}: For all $a$, $b$, $c$ in $F$, the equation $(a+b)\times c=(a\times c)+(b\times c)$ holds</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id4147974">
+            <rect x="899.0" y="356.0" width="72.0" height="294.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="black" fill="#00cccc"/>
+        </g>
+        <g latexdraw:type="text" id="id9212378" fill="black"
+            latexdraw:position="bl" transform="rotate(89.36715915992426) translate(-538.8173570053854 -1294.8017892653193)">
+            <text x="924.0" y="375.0">\textbf{Abelian Group} $(F-\{0\},\times,1)$</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id30929577">
+            <rect x="899.0" y="649.9473684210525" width="72.0"
+                height="117.15789473684208" latexdraw:borderPos="outer"
+                stroke-width="2.0" stroke="black" fill="#00cccc"/>
+        </g>
+        <g latexdraw:type="text" id="id4706469" fill="black"
+            latexdraw:position="bl" transform="rotate(89.36715915992426) translate(-277.4569118648193 -1611.591148133218)">
+            <text x="953.4736842105258" y="665.5263157894738">\textbf{Relations}</text>
+        </g>
+        <g latexdraw:type="text" id="id11466323" fill="black"
+            latexdraw:position="bl" transform="rotate(89.36715915992426) translate(-255.5726757564172 -1593.6743787456442)">
+            <text x="933.4736842105258" y="667.6315789473679">\textbf{between}</text>
+        </g>
+        <g latexdraw:type="text" id="id30601895" fill="black"
+            latexdraw:position="bl" transform="rotate(89.36715915992426) translate(-241.1026593939033 -1560.096281186968)">
+            <text x="909.2631578947357" y="658.1578947368416">"$+$" \textbf{and} "$\times$"</text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes/>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>0.95</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>NONE</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.5</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1938</latexdraw:width>
+                <latexdraw:height>1048</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>-9.0</latexdraw:x>
+                <latexdraw:y>-9.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>
