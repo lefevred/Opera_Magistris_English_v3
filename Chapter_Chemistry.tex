@@ -1,0 +1,1720 @@
+	%to force start on odd page
+	\newpage
+	\thispagestyle{empty}
+	\mbox{}
+	\section{Quantum Chemistry}
+	\lettrine[lines=4]{\color{BrickRed}B}efore the reader to go further in reading this chapter of the book, we want to remind that the site deals mainly with Applied Mathematics and theoretical physics. Thus, we will address in this section only of theoretical chemistry (theoretical quantum  chemistry, theoretical thermochemistry, theoretical kinetic chemistry, etc).
+	
+	This choice follows the changes of chemistry since the years 1980: form a largely descriptive science descriptive, it tends to become deductive. That is to say that in addition to experience, calculation methods are constantly growing and particularly since the development of modern computing that greatly helps chemists to numerical modeling.	
+	
+	Theoretical chemistry, also named "\NewTerm{physical chemistry}\index{physical chemistry}" - application of methods from physics to chemistry - is too often seen as a discipline in itself. In fact, under this term any modern chemistry field is included. Thus, the investigation of any problem in advanced chemistry requires the assistance of theoretical chemistry (and this is lucky...) and the chemist must have a thorough knowledge of it. At the level of chemistry teaching as secondary branch, the role of physical chemistry is already evident: the result is an increase in the level of students, increase in the abstraction and therefore a risk in alienating the average student. Finally, the purpose is not to burden the knowledge by incorporating more new elements, but to convert the mode of approach of this discipline by substituting the most often encyclopedic knowledge statements by rational developments based on only a few assumptions and hypothesis that permits to deduce thanks to mathematics many properties thanks to colorraries.
+	
+	A good understanding of physical chemistry requires in our point of view necessarily to be familiar with quantum physics (\SeeChapter{see chapter Atomistic}) to have at least one approach to what an atom is and its different electron orbits before talking about connections, different filling methods of electron orbits, redox, filling layers, and others...
+	
+	In this sense, we will begin by studying the particular case of the hydrogen atom, which is crucial for the whole that will follow (study of polyelectronic atoms). It is therefore necessary for the reader to browse the next lines with all possible attention and to understand as best as possible the subtleties!
+	
+	\subsection{Infinite three-dimensional rectangular potential}
+	We studied in details in the section of Corpuscular Quantum Physics the Bohr-Sommerfeld hydrogen atom using the results proved in the section of Special Relativity. This model emerged in a simplistic quantification (but not too much wrong as will discussed later below) of certain properties of matter.
+	
+	In the section of Wave Quantum Physics, we studied alos in details the rectilinear infinite potential wall and the harmonic oscillator without giving many more examples. Now we will move towards to resolve problems closer to those useful in chemistry with the objective of studying the hydrogen-like atom.
+	
+	We will now consider a particle moving freely in the three dimensional box below:
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/box_quantum_chemistry.jpg}
+		\end{center}	
+		\caption[]{Three dimensional imaginary box in which the particle moves}
+	\end{figure}
+
+	The potential energy of the system is given by:	
+
+	
+	As in the one-dimensional case (\SeeChapter{see section Wave Quantumn Physics}), the walls of infinite potential prevent the particle from leaving the box, and the wave function is nonzero only for position vector $\vec{r}$ being inside the box. It  necessarily vanish when one of the walls is touched. The Schrödinger equation we have to solve is (\SeeChapter{see section Wave Quantumn Physics}):
+	
+	and boundary conditions are:
+	
+	Note that the Hamiltonian can be written as the sum of the Hamiltonian in each axis (we speak of the hamiltonian operators of course!). So we have:
+	
+	where
+	
+	relations that we have proved the origin in details in the section of Wave Quantum Physics of this book.
+	
+	Such a form is named a "\NewTerm{separable form}\index{chemical separable form}": the Hamiltonian is the sum of individual operators $H_i$ each depending only on one variable or degree of freedom $q_i$. This form reflects the independent nature of the movements described by the variables $q_i$.
+	
+	Remember that the joint probability of two independent events is the product of the individual probabilities of the two events separately (\SeeChapter{see section Probabilities}). We therefore expect that the presence probability density in space (\SeeChapter{see section Wave Quantum Physics}) with multidimensional configuration is, if the Hamiltonian of separable form, a simple individual probability density product. In fact, the separable form of the Hamiltonian permits the separation of variables on the wave function itself.
+
+	Let us write the solutions of the Schrödinger equation under the form:
+	
+	of a product of three factors each depending only of one coordinated.
+
+	Substituting this notation in the Schrödinger equation, we get without technical developments (elementary algebra):
+	
+	or, by dividing both sides of this equation by $\xi(x)\vartheta(y)\zeta(z)$:
+	
+	which is a much more aesthetic and easier to remember.
+	
+	This equation requires that the sum of the three terms in the left-hand side is equal to a constant in the context of a conservative system (that is what often interested chemists)! Each of these three terms depending only on one and only one variable, so that their sum is equal to a constant, it is necessary that each term is itself constant! In fact, by taking the derivative of both sides of the above equation with respect to $x$, for example, we have:
+	
+	meaning that equation although  must be a constant which we will denote equation (as this term expresses an energy). We then have (surprise...):
+	
+	Similarly, we get:
+	
+	Note that each of the separate equations that we have just obtained, for the movement of the particle in the three spatial directions, is a Schrödinger equation in a one-dimensional box. Thus, the three relations previously obtained independently describe each movement in the respective $x, y, z$ directions, limited to the respective ranges:
+	
+	and must be respectively  solved with boundary conditions:
+	
+	The results obtained in the section of Wave Quantum Physics when solving the Schrödinger equation in the case of straight wells give us directly:
+	
+	In summary the stationary states of the particle in the three-dimensional box are specified by three positive integers quantum numbers $\lambda, \mu, \nu$. The wave function is finally:
+	
+	and its respective energies (eigenvalues):
+	
+	The variable separation technique detailed above, is applicable only because the Hamiltonian is in separable form. It comes automatically therefore the three-dimensional probability density $\vert \Psi(x,y,z) \vert^2$ is the product of probability density $\vert \xi_\lambda(x)\vert^2,\vert \vartheta_\mu(y)\vert^2,\vert \zeta_\nu(z)\vert^2$, as we had anticipated it. We also note that the energy of movement in three dimensional space is the sum of energy movements in all three spatial directions: the independence of these three directions or degrees of freedom, implies the additivity of their energy.
+	
+	\subsection{Molecular Vibrations}
+	We studied in the Wave Quantum Physics section the harmonic oscillator. Now it in is chemistry that we will use all the power of the results obtained during the study of this system.
+	
+	The harmonic oscillator is a model of molecular vibrations, and is represented by a type of parabolic potential as:
+	
+	for a diatomic molecule. But we have proved in the section of Nuclear Physics that $c^{te}=m\omega_0^2$ so that we finally have for a diatomic molecule:
+	
+	For a polyatomic molecule, we have verbatim (by the additivity of energy):
+	
+	Quantities $\omega_0$ and $\omega_i$ are the vibration frequencies (or rather more correctly: the pulsation) of a molecule, diatomic in the first case and polyatomic in the second case. In the first equation, the variable $x$ represents the elongation of the bond between the two atoms $A$ and $B$ (as with a spring) in a diatomic molecule, that is to say $x=R-R_{eq}$, where $R$ is the instantaneous length of this bond, and $R_{eq}$ is its equilibrium value.
+	
+	In the case of a polyatomic molecule, the potential describing molecular vibrations takes a separable form in terms of summation above only if one considers special variables $q_i$ denoting collective motions of nuclei, and which are named "\NewTerm{normal vibration modes}\index{normal vibration modes}".
+	
+	We also saw in the section of Wave Quantum Physics that the Hamiltonian of a diatomic molecule (problem of the harmonic oscillator) can be written as
+	
+	For a polyatomic molecule that relationship becomes logically:
+	
+	The Hamiltonian above is clearly a type of separable form: it is a sum of one-dimensional Hamiltonians, each depending only on a single mode $q_i$ as variable, describing this mode as a unique spring or harmonic unit mass ($m=1$) oscillator and of pulse oscillation $\omega_i$. Therefore, a separation of variables $q_i$ is possible, reducing the Schrödinger time independant into a number of equations of the same type as that of a one-dimensional harmonic oscillator. So we need just o know the expression of the wave function for a one-dimensional harmonic oscillator, what we already have done in the section of Wave Quantum Physics where we got:
+	
+	and:
+	
+	The figure below shows the graph of the first wave functions of the above relation as well as that of their respective presence probability densities. We can see the same modal structures as those specific to functions of a particle in a one-dimensional box:
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/one_dimensionnal_oscillator.jpg}
+		\end{center}	
+		\caption{Wave functions and probability density of a one-dimensional harmonic oscillator}
+	\end{figure}
+	Above the first energy levels of a one-dimensional oscillator with \texttt{\textbf{(a)}} their associated eigenfunction, \texttt{\textbf{(b)}} the  associated probability distribution of presence.
+	
+	In the limit of very large values of $n$, the probability distribution approximates more and more of that predicted by classical mechanics, the oscillator lies for the most of the time in the vicinity of the turning points defined by the intersection of potential $E_{\text{pot}}$ with the level of $n$. This trend is illustrated below:
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/one_dimensionnal_oscillator_limit.jpg}
+		\end{center}	
+		\caption{Probability density function of a one-dimensional harmonic oscillator for large $n$}
+	\end{figure}
+	For a polyatomic molecule the expression of quantified energy therefore becomes:
+	
+	and eigenfunctions/eigenstates become:
+	
+	with:
+	
+	The last two relations are very important because they allow among others to:
+	\begin{itemize}
+		\item Predict the spectrum of the molecule (spectroscopy)
+		\item To study the energy bands (where does the bands of valence and conduction comes from)
+		\item To locate the bonds between atoms and thus the chemical properties
+	\end{itemize}
+	
+	\subsection{Hydrogenoid Atom}
+	We consider here the quantification of a generic system made of two bodies (particles) interacting with each other and moving in a three-dimensional space. We will be prove at first that, even if the separation of dynamic variables describing individually each of the two bodies is impossible, for cons, the overall movement system (the center of mass) and internal movement, also said "relative motion", are separable. In addition, if the potential is centrosymmetric, the internal movement may also be decomposed into a rotational movement and radial movement. The quantification of the rotational movement is intimately connected to that of angular momentum.
+	
+	Here we focus on the mechanics of an atomic system having only one electron. This is a two-particle system: a nucleus of mass $M$ and charge $+Zq_e$, and an electron of mass $m_e$ and of charge $-q_e$.
+	
+	The atomic system is described by the following Hamiltonian
+	
+	Remember that in the section of Wave Quantum Physics we had proved during our study of functional operators:
+	
+	and remember also that $\vec{r}_e$ and $\vec{R}_n$ are respectively the position vectors of the electron and nucleus in the prior-previous relation.
+	
+	The potential energy being given by (\SeeChapter{see section Electrostatic}):
+	
+	The movements of the two particles are correlated because the two charges interact through their mutual electrical field. We can not make a separation between variables $\vec{r}_e$ and $\vec{R}_N$. By cons, a separation of variables is possible with the coordinate of the center of mass (see the definition of the center of mass in the section of Classical Mechanics):
+	
+	and the relative coordinate of the electron relative to the nucleus:
+	
+	We obtain therefore:
+	
+	and:
+	
+	The Hamiltonian in the center of mass repository will therefore be written:
+	
+	where $M_{tot}=m_e+M$ is the total mass of the system and:
+	
+	is its reduced mass.
+	
+	We clearly see that the Hamiltonian $H$ is this time set in a separable form and we can write it as follows:
+	
+	with:
+	
+	In terms of the coordinates $\vec{R}_{\text{CM}}$ and $\vec{r}_{\text{rel}}$, the function describing a stationary state of the two-body system is a product of individual wave functions (recall that the joint probability of two events is the product of probabilities), one for the movement of the center of mass and the other for the relative movement:
+	
+	and the energy of this state is the sum of the respective energies of movements:
+	
+	with:
+	
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	This approach of separating the wave function into the composition of a wave function of the center of mass and the relative movement is also used in the context of the study of poly-electronic atoms, but with one difference: as the nucleus is much more massive than the processing electrons (in approximation ...), the center of mass is assimilated to the nucleus of the atom and the relative motion to the entire electron cloud. This approximate approach is well known under the designation "\NewTerm{Born-Oppenheimer approximation}\index{Born-Oppenheimer approximation}".
+	\end{tcolorbox}
+	Where the Hamiltonian appearing in the first of these relations has been defined above as being:
+	
+	This movement is that of a particle of mass $M_{tot}$ in a three-dimensional box of infinite volume. Eigenvalues and eigenfunctions for this movement has already been obtained in our previous study, we will restrict ourselves to the study of separate equation for the relative movement, or internal movement. As no confusion will be possible between different Hamiltonians, we let down, to simplify the notations, the "rel" word in subscript.
+	With $H_{\text{rel}}$ given by the relation that we have proved previously:
+	
+	and the relation (as proved above):
+	
+	then we obtain the Schrödinger equation for the relative motion:
+	
+	or written differently:
+	
+	Note that in the case where the potential energy $E_{\text{pot}}$ is a centrosymmetric source, that is to say it depends only on the length of the position vector $\vec{r}$, and not its orientation, the previous equation, written in Cartesian coordinates, is inseparable. Indeed, in Cartesian coordinates, the length $\vec{r}$ is given by:
+	
+	and the potential energy can not be separated into three components, each depending only one of the three variables $x, y, z$. The Hamiltonian is therefore still not a separable form and so we did not meet our target. However, the above equation is separable at the moment we make a change of coordinates to spherical coordinates. Indeed, in this coordinate system, the potential depends on only on one of the three spherical variables: the radius $r$. It is independent of the two angles $\theta$ and $\phi$.
+	
+	Referring to the result obtained in the study of the Laplace expressions in different coordinate systems, in the section of Vector Calculus, we got for the Laplacian of a scalar field in spherical coordinates the following expression:
+	
+	The hamiltonien:
+	
+	then becomes (simple distribution and new way to note):
+	
+	where:
+	
+	is the kinetic energy operator for the radial movement of the electron relative to the nucleus, and $L^2$ is the squared "associated" operator of the angular momentum vector:
+	
+	The term:
+	
+	is therefore an energy associated with the angular momentum $J$ (\SeeChapter{see section Classical Mechanics}).
+	
+	To understand the nature of this operator $L^2$ a detour by the notion of rigid rotor will help.
+	
+	\subsection{Rigid Rotator}
+	If we now consider the case of a system named "\NewTerm{rigid rotor}\index{rigid rotor}" where we neglect ("restrict" would be a more appropriate term ...) the degrees of freedom of oscillation (this is the system that are the study case for linear diatomic or polyatomic molecules), the only coordinates being into play are the angles $\theta$ and $\phi$ which fix the orientation of the rotator.
+	
+	Thus, in this case $r$ is fixed and we have:
+	
+	and in view of the constraints on the potential, it is normally quite easy to understand why the rotator is said to be "rigid". In the above case, the Hamiltonian is reduced to:
+	
+	
+	For the rest, we associate the operator $L^2$ to an angular momentum, for the simple reason that he has the units... Indeed, let us recall that we have prove in the section of Wave Quantum Physics that when the spin is zero (so as part of our study of the hydrogenoid  atom here, the spin will not be taken into account in the first instance) and that we are dealing with a single particle then the angular momentum (which we will denote by $L$ instead of $b$) is given by:
+	
+	where the components of the vector $\vec{l}$ are also natural numbers. By doing this similarity, we can then write the Schrödinger equation in the form:
+	
+	Let us recall we got in the section of Wave Quantum Physics that:
+	
+	by the vector product.
+	
+	We go now to rectangular coordinates $x, y, z$ coordinates to spherical coordinates $r,\theta,\phi$. Remember for this (\SeeChapter{see section Vector Calculus}) that:
+	
+	and that:
+	
+	Now let us express the total differentials:
+	
+	These relations can be written as an orthogonal transformation of the total differential $\mathrm{d}r,r\mathrm{d}\theta,r\sin(\theta)\mathrm{d}\phi$ by:
+	
+	or by the inverse transformation (if required ... it is enough to check that the two transformation matrices multiplied together give the identity matrix):
+	
+	It results of this for example:
+	
+	and finally (the method for the second and third lines is the sam as for the first!):
+	
+	Thus, taking into account these relationships, we obtain for example, in the case of the operator:
+	
+	the following developments:
+	
+	which gives the following result:
+	
+	By doing the same with:
+	
+	by doing the same developments:
+	
+	we have the following result:
+	
+	And for finish with:
+	
+	by doing the same developments:
+	
+	we get the following result:
+	
+	Finally, we have only little freedom for the movement of our rigid rotor (as it is very rigid ...) and we can write for the Schrödinger equation:
+	
+	where $H_\text{rot}$ is for recall, seen as the functional linear operator, and the total energy $E$ as its corresponding eigenvector.
+
+	Therefore, we can write that angular momentum operator is given by (we change the notation so to not confuse subsequently operator and eigenvalue according to the comments we made during the satement of the postulates of Wave Quantum Physics in the corresponding section):
+	
+	Thus, the eigenfunctions $\Phi(\phi)$ of $\hat{L}_z$ are solutions of the equation to the eigenvalues and eigenfunctions:
+	
+	that is to say the differential equation:
+	
+	where $L_z$ is obviously the eigenvalue of $\hat{L}_z$. A simple solution to this differential would be:
+	
+	with for uniformity condition, depending on the properties of complex number (\SeeChapter{see section Numbers}):
+	
+	This mathematical condition imposes the obvious and remarkable following quantification:
+	
+	where (recall) $m_l$ is the magnetic quantum number.
+
+	Knowing that (\SeeChapter{see section Corpuscular Quantum Physics}):
+	
+	We can write:
+	
+	Therefore, we falls back on the result(s) that we get in the section of Corpuscular Quantum Physics and Wave Quantum Physics:
+	
+	Which is quite satisfactory, even remarkable and enjoyable (to not say it ...).
+	
+	Thus, the measurement of a component of the angular of $\hbar$ which appears as a natural unit of angular momentum.
+	The common eigenfunctions (!!!) to the operators $\hat{L}^2$ and $\hat{L}_z$ are in a more general framework necessarily of the form (method of separation of variables ):
+	
+	As the rotator is rigid, we have $R(r)=c^{e}$. This factor will eliminate itself in the equation of eigenvalues and eigenfunctions that we will determine further below. So we can not take it into account if we ant. Finally, we can write thanks to previous developments:
+	
+	Which brings us to the equation to the eigenvalues and eigenfunctions:
+	
+	That is to say
+	
+	Therefore:
+	
+	By putting:
+	
+	and therefore:
+	
+	we get a "Fuchs" like differential equation given by:
+	
+	Therefore finally:
+	
+	Whose coefficients have poles (singularities) in $\xi=\pm 1$. But, let us recall that we have:
+	
+	So that we often find the previous differential equation in the following form in the books after elementary algebra factorization of some terms:
+	
+	A nontrivial solution being, knowing the Fuchs of differential equations, that it is customary to name the "\NewTerm{associated Legendre polynomials}\index{associated Legendre polynomials}" (although this is not strictly speaking a polynomial ....) because containing partly Legendre polynomials (\SeeChapter{see section Calculus}):
+	
+	that you can check by injecting this solution in prior-previous differential equation.
+	
+	...Following the request of a reader is an example of verification before continuing:
+	
+	The $m_l=l=0$ is immediate. Then let us consider the case where $m_l=l=1$:
+	
+	Thus:
+	
+	And we inject in it the associated Lagrange polynomial:
+	
+	Therefore:
+	
+	Which give after a small simplification:
+	
+	By derivating:
+	
+	Let's focus on the left part to see what it is equal to by putting everything to a common denominator:
+	
+	By simplifying the numerator, it should be zero. Let us see this by simplifying a first time:
+	
+	by distributing:
+	
+	Which is indeed equal to zero!!!
+
+	So finally, we have common eigen functions (because remember that the Legendre polynomials are orthogonal to each other) that will be:
+	 
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	It is not necessary to make complicated calculations to calculate the normalizaton factor of the exponential, as in the context of an integration over all space, the three factors of $Y_{m_l,l}(\theta,\phi)$ are independent of each other. Thus the integral is the product of the integrals (\SeeChapter{see section of Differential and Integral Calculus}).
+	\end{tcolorbox}
+	Finally, we must find $N_{m_l,l}$ such that:
+	
+	and we will see (what we will prove just below) that:
+	
+	In summary, we write (we should rather write "we will write"...)
+	
+	where we have omitted the factor $(-1)^l$ since in any case this term in the module of this function this term multiplies himself and then gives $(-1)^{2l}=1$.
+
+Let us check now the framed previous boxed relation (warning this is a bit long and it is advisable to read it several times):
+
+	We consider the functions defined by:
+	
+	where:
+	
+	with:
+	
+	The aim will therefore be to prove that these functions are orthogonal first and then find the constants $N_{m_l,l}$ such that $||Y_{m_l,l}||$. In short we will have to roll up the sleeves... of our brain...
+
+	First, let us prove for future needs that:
+	
+	\begin{dem}
+	If and only if $l=m_l=0$ the equality is obvious. Let us suppose that $l\geq 1$ (thus the general case outside the obvious previous case) and given $P$ a real polynomial of degree $\leq l-1$.
+
+	Let us put:
+	
+	Let us prove (functional dot product):
+	
+	in  $\mathcal{C}(x\in[-1,1],\mathbb{R})$.
+	
+	Indeed, let us recall that we made the change of variable:
+	
+	Integrating by parts, we get:
+	
+	let us notice that for any $0\leq j\leq m_l-1$, $\dfrac{\mathrm{d}^j}{\mathrm{d}x^j}Z(x)$ is equal to zero in $x=\pm 1$ that is to say:
+	
+	Therefore (by extension), the above relation simplifies to:
+	
+	After $m_l$ integration by parts equation, we get:
+	
+	If $\deg(P)<m_l$ then the above expression shows that trivially:
+	
+	If $\deg(P)\geq m_l$ then by putting:
+	
+	We get:
+	
+	let us notice once again that $\dfrac{\mathrm{d}^j}{\mathrm{d}x^j}h(x)$ vanishes in $x=\pm 1$ for any $j\leq m_l-1$, that is say:
+	
+	By integrating by parts $m_l$the previous expression, we find:
+	
+	but $h$ is an polynomial of degree $m_l+\text{deg}(P)$.
+	
+	Indeed, the first factor is of degree $2m$ and the $m_l$th derivative of $P(x)$" is of degree $P-m_l$, therefore:
+	
+	So $\dfrac{\mathrm{d}^{m_l}}{\mathrm{d}x^{m_l}}h(x)$ is a polynomial of degree $\deg(P)\leq l-1$ and knowing that $\dfrac{\mathrm{d}^l}{\mathrm{d}x^l}(1-x^2)^l$ is to a given constant equal to the $l$-th Legendre polynomial (\SeeChapter{see section Calculus}) we then have:
+	
+	So we have just proved that $\dfrac{\mathrm{d}m_l}{\mathrm{d}x^{m}_l}$ is orthogonal to any polynomial of degree $\leq l-1$.
+	\begin{flushright}
+		$\square$  Q.E.D.
+	\end{flushright}
+	\end{dem}
+	$\dfrac{\mathrm{d}^{m_l}}{\mathrm{d}x^{m_l}}Z$ is a polynomial of degree $l$ (its just enough to check for some values) so therefore let us search if there is a constant $c^{te}\in\mathbb{R}$ such that:
+	
+	with for recall:
+	
+	We can determine the constant $c^{te}$ by comparing the dominant coefficients of the polynomials:
+	
+	The dominant coefficient of $\dfrac{\mathrm{d}^{m_l}}{\mathrm{d}x^{m_l}}Z$ is:
+	
+	and the dominant coefficient of $\dfrac{\mathrm{d}^l}{\mathrm{d}x^l}(1-x^2)^l$ is:
+	
+	Therefore:
+	
+	That is to say:
+	
+	So we would have for $l\geq m_l\geq 0$ (we integrate parts we integrate as many times as necessary to the left and right - necessarily - to achieve this result):
+	
+	Now let us establish a remarkable relation that should perhaps exist between $P_{-m_l,l}$ and $P_{m_l,l}$ (and which will be useful to us later). Let us assume for this $0\leq m_l\leq l$ and remember that at the base:
+	
+	So that brings us to write (nothing special):
+	
+	By the previous results ($(-1)^{m_l}=(-1)^{-m_l}$):
+	
+	this leads us to write:
+	
+	Therefore we get:
+	
+	
+	First, let us prove that:
+	
+	where $P_l$ is the $n$-th Legendre polynomial (hence the origin of the name of "associated  Legendre polynomial" ...).
+	\begin{dem}
+	First, we have proved that the Legendre polynomials satisfy the following recurrence relation (\SeeChapter{see section Calculus}):
+	
+	for $n\geq 1$.
+	Multiplying the above equation by $x^{n-1}$ and integrating, we get:
+	
+	But:
+	
+	Let us recall that the $P_{n+1}$ polynomials form an orthogonal basis of which the polynomials that generate it are of increasing degree from $0$ to $n$, so a lower order polynomial - expressed in a sub vector space - will always be perpendicular to the vectors (polynomials) generating the higher dimensions. So if we take the example of $\mathbb{R}^3$ generated by the basis $(\vec{e}_1,\vec{e}_2,\vec{e}_3)$, then a vector $\vec{v}$ expressed by the linear combination of $(\vec{e}_1,\vec{e}_2)$ will always be perpendicular to $\vec{e}_3$ and therefore a zero scalar product with it.
+
+	And  therefore it follows:
+	
+	Let us put:
+	
+	The previous expression becomes (remember $P_0(x)=1$):
+	
+	Thus by induction:
+	
+	
+	Furthermore as:
+	
+	We then for for the prior-previous relation the denominator which can obviously be rewritten:
+	
+	Then we have:
+	
+	So in the end we can simplify the denominator as follows:
+	
+	and:
+	
+	So we have well proved that (just in case ... you would not follow anymore the initial target ...) that:
+	
+	\begin{flushright}
+		$\square$  Q.E.D.
+	\end{flushright}
+	\end{dem}
+	Let us attack us finally to what interests us. That is to say, prove that:
+	
+	\begin{dem}
+	If $m_l\neq j$ then:
+	
+	where:
+	
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	Let us recall that the Jacobian in spherical coordinates is $r^2\sin(\theta)$ (\SeeChapter{see section of Differential and Integral Calculus}) and as the integrated function above is not dependent on $r$, we have take out the term $r^2\mathrm{d}r$ of this integral (by cons we will meet again the same term in the function $R(r)$ present in the Schrödinger equation).
+	\end{tcolorbox}
+	And with:
+	
+	If $l>k$ and $m_l=j$ then the dot product of:
+	
+	is simplified to:
+	
+	By doing the change of variable $x=\cos(\theta)$ we get:
+	
+	Let us suppose that $m_l\geq 0$:
+	
+	where $P_l(x)$ is the $n$-th Legendre polynomial. Thus the expression of the dot product becomes:
+	
+	If we put:
+	
+	then the relation becomes:
+	
+	Integrating by parts $m$ times the expression above we get:
+	
+	But $\dfrac{\mathrm{d}^{m_l}}{\mathrm{d}x^{m_l}}h(x)$ is a polynomial of degree $k$. Knowing that $l>k$, the latter integral is zero for the same reasons as those mentioned above. Therefore:
+	
+	If $m_l<$ then we have proved that:
+	
+	and therefore:
+	
+	as $-m_l\geq 0$.
+	
+	It only remains to us to treat the case $m_l=j,l=k$. Let us suppose again that $m_l\geq 0$. So as before we have:
+	
+	and:
+	
+	Let us put:
+	
+	The relation then becomes:
+	
+	By integrating $m$ times by parts, we find:
+	
+	$\dfrac{\mathrm{d} ^{m_l}}{\mathrm{d} x^{m_l}}h(x)$ is a polynomial of degree $l$ which dominant coefficient is equal to:
+	
+	$P_l$ being orthogonal to any polynomial of degree strictly less that $l$, the expression can be written:
+	
+	But, we have proved that:
+	
+	therefore:
+	
+	If $m_l\leq 0$ we know that we get the result.
+	\begin{flushright}
+		$\square$  Q.E.D.
+	\end{flushright}
+	\end{dem}
+	Finally this result gives us also the normalization condition:
+	
+	And so finally:
+	
+	is indeed an orthonormal family. Either explicitly (we reintroduce the factor $(-1)^l$):
+	
+	Finally, after this highly mathematical interlude (but instructive for the methodology of approach), we see (which is logical) that ot each value of $l$ correspond therefore $2l + 1$ eigenfunctions $Y_{m_l,l}(\theta,\phi)$. We also say that the value $\hbar l(l+1)$ is $2l + 1$ times degenerated since:
+	
+	Here are some values of the function  $Y_{m_l,l}(\theta,\phi)$ that generates what we commonly name "\NewTerm{spherical harmonics}\index{spherical harmonics}":
+	
+	Let's see some plots of these beautiful spherical harmonics that can be obtained with Maple 4.00b by using the following command (this is the $6$th spherical harmonic function above):\\
+
+	\texttt{>plot3d(Re(sqrt(15/(8*Pi))*(sin(theta)*cos(theta)*exp(I*phi)))\string^2,phi=0..2*Pi,\\theta=0..Pi, coords=spherical,scaling=constrained,numpoints=5000,axes=frame);}
+	\begin{figure}[H]
+		\centering
+		\includegraphics{img/chemistry/orbit_rigid_rotator_hydrogen_y12_maple.jpg}	
+		\caption{Plot of the spherical harmpnics $Y_{1,2}$}
+	\end{figure}
+	
+	\begin{itemize}
+		\item $Y_{0,0}$ (corresponding to $n=1$!) gives a sphere (constant value regardless $\theta,\phi$) which the probability density can be represented by the "\NewTerm{photographic card}\index{photographic card (chemistry)}" or "\NewTerm{density map}\index{density map (chemistry)}" (the density in a given state is represented by the density of light spots on a dark background):
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/density_map1s.jpg}	
+			\caption{$1s$ density map}
+		\end{figure}
+		Representing the possible $1s$ orbits.
+
+		\item $Y_{0,1},Y_{1,1},Y_{-1,1}$ give (for $n=2$  at least!):
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/harmonic_functions_2p.jpg}	
+			\caption{$2p$ orbitals (spherical harmonics)}
+		\end{figure}
+		Which represents the possible $2p$ orbits, the probability density function can be represented by its density and isodensity maps:
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/density_map2p.jpg}	
+			\caption{$2p$ density map}
+		\end{figure}
+
+		\item $Y_{-2,2},Y_{-1,2},Y_{1,2},Y_{2,2},Y_{0,2}$ give (for $n=3$  at least!):
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/harmonic_functions_3d.jpg}	
+			\caption{$3d$ orbitals (spherical harmonics)}
+		\end{figure}
+		Representing $5$ possible $3d$ centrosymmetric  orbits, which the probability density can be represented by (the last two maps represent $Y_{0,2}$) the following density maps:
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/density_map3d.jpg}	
+			\caption{$3d$ density map}
+		\end{figure}
+
+		\item $Y_{-3,3},Y_{-2,3},Y_{-1,3},Y_{1,3},Y_{2,3},Y_{3,3},Y_{0,3}$ give (for $n=4$  at least!):
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/harmonic_functions_4f.jpg}	
+			\caption{$3d$ orbitals (spherical harmonics)}
+		\end{figure}
+		Representing $7$ possible $3f$ anti-centrosymmetric  orbits, which the probability density can be represented by (in the order: $Y_{0,3},Y_{\pm 1,3},Y_{\pm 2,3},Y_{\pm 3,3}$) the following density maps:
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/density_map4f.jpg}	
+			\caption{$4f$ density map}
+		\end{figure}
+	\end{itemize}
+	The above results thus lead us to write:
+	
+	Substituting this in the Schrödinger equation:
+	
+	We get ($T_r=0$ in the rigid rotor but $\neq 0$ in the case of the hydrogen atom):
+	
+	As there is in this relation no operator which acts on $Y_{m_l,l}(\theta,\phi)$, we can simplify to obtain:
+	
+	which we see in the general case of the isolated atom that energy levels are no longer dependent of $m_l$ (due to the spherical symmetry of the potential). Then we say that the levels corresponding to the same values of $n$ and of $l$ are all merged whatever the values of $m_l$.
+	
+	In the case where $E_\text{pot}$ derived from the $1 / r$ Coulomb potential , this radial equation leads us to a normalizing solution of $R (r)$ (different from zero then...) only for values of the energy corresponding to the following quantization law (well ... what a coincidence, we fall back on the expression proved in the old models of Corpuscular Quantum Physics!):
+	
+	where $R_H$ is the Rydberg constant as we determined in the section of Corpuscular Quantum Physics. Thus, in this case the energy levels corresponding to the same values of $n$ are all merged regardless of the value of $l$.
+
+	For a given value of the principal quantum number $n$ (recall that we saw in the section of Corpuscular Quantum Physics that $l\leq n-1$), it is possible to verify that there are several solutions to the function $R(r)$ according to the value of the azimuthal quantum number $l$. Hence the identification of the solutions by the pair $(n, l)$. We note them $R_{n,l}(r)$. These are real functions of the variable $r$ (it just enough to check ... because if they work then they satisfy the Schrödinger equation, we will make an example a little further below):
+	
+	where (beware some books give this value in natural units!):
+	
+	is the equivalent of the Bohr radius (for the reduced mass) that we have determined in the section of Corpuscular Quantum Physics  with the difference that here we have a reduced mass instead of a single mass.
+	
+	However let us see if our Schrödinger equation is satisfied (taking $n=1,l=0$ for example):
+	
+	Which corresponds well to the expected result.
+
+	Which graphically gives us the radial part $R_{n,l}(r)$:
+	\begin{figure}[H]
+		\centering
+		\includegraphics{img/chemistry/radial_functions.jpg}	
+		\caption{Plot of few radial functions $R_{n,l}(r)$}
+	\end{figure}
+	Let us study a little more in detail the radial function in the case of the hydrogen atom!:
+
+	In the case of the atomic orbital $1s$ (!special case but we could do the same calculations as the following with all other orbital!) so we have for the hydrogen atom:
+	
+	So it is well a decreasing exponential function as shown in the graphic above. Before continuing let us recall that (\SeeChapter{see section Wave Quantum Physics}) :
+	
+	But, in spherical coordinates (see the beginning of this section):
+	
+	It then comes as we have seen earlier above:
+	
+	Then if follows that:
+	
+	With this result we can calculate the radial probability of finding the electron on each atomic orbital! So, it comes immediately with the previous result:
+	
+	So in the case of our $1s$ atomic orbital:
+	
+	It is now super interesting to calculate the point $r$ point where the probability of finding the electron is maximum on the $1s$ orbital!
+
+	For this, we notice that $\dfrac{P_r}{\mathrm{d}r}$ reaches a maximum when we have trivially:
+	
+	Therefore:
+	
+	Therefore:
+	
+	Which is remarkable, because we find the result of the Bohr model (\SeeChapter{see section Corpuscular Physics})!!!
+
+	To summarize a little all this, the stationary states of the hydrogen atom are specified by three quantum numbers $n\in\mathbb{N}^{*},l\leq n-1,|m_l|\leq l$ and the Schrödinger wave function given finally by:
+	
+	We then the following traditional nomenclature in the case of the hydrogen atom:
+	
+	We can include the spin of the electron in the description of the electronic structure of the atom. If we treat the spin as an additional degree of freedom then the lack of interaction term between conventional degrees of freedom (positions in real space) and the spin interaction named "\NewTerm{spin-orbit coupling}\index{spin-orbit coupling}" in the previous Hamiltonian implies that we can write the total wave function, spin included, in the form of a product:
+	
+	
+	So taking into account everything seen so far we have the following density plots:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{img/chemistry/hydrogen_full_wave_function.jpg}	
+	\end{figure}
+	
+	where we added the spin quantum number $m_s=\pm 1/2$ (\SeeChapter{see section Corpuscular Quantum Physics}).
+
+	The same remark we made in the section of Corpuscular Quantum Physics then applies: the levels remain $2n^2$ times degenerated.
+
+	Let us do example. So we have:
+	
+	Thus for $1$ proton:
+	
+	Now let us apply the 5th postulate of wave quantum physics (see section of the same name) for unlike earlier, not calculate the modal radius (most likely one), but the average radius! Then, as the operator position is the position itself (\SeeChapter{see section of Wave Quantum Physics}), the average value of the radius will be given by (do not forget that we are in spherical coordinates!):
+	
+	Using the Fubini theorem proved in the section of Differential and Integral Calculus we can write (well in this case it's even trivial that we have the right to write this... we should not even have to mention Fubini theorem normally...):
+	
+	For the last integral, we will use integration by parts:
+	
+	Thus finally:
+	
+	Or more explicitly:
+	
+	Therefore the average distance of the electron to the core is equal to $3/2$ times that of the Bohr radius so further that the most likely radius we have calculated earlier above (and which corresponds to Bohr radius)!
+	
+	\subsubsection{Potential Profile}
+	Let us come back on an important point that is often used in physics book but never proved (as far as we know): the quantum potential profile of the hydrogen-like atom. Many books sometimes speak of "\NewTerm{harmonic model of the atomic bonding}\index{harmonic model of the atomic bonding}" but it seems that this is a priori rather a misnomer.
+
+	So we saw much earlier in this section that:
+	
+	In view of the interpretation of the three terms of the Hamiltonian, it is customary to say that the two terms:
+	
+	constitute the "\NewTerm{effective potential energy}\index{effective potential energy}", thus explicitly:
+	
+	So the first term is (logically) repulsive while the second is attractive. A plot in Maple 4.00b of the effective potential energy gives with real experimental values for the radius with the real values of the constants:\\
+	
+	\texttt{>plot([-2.31E-28/r+6.11E-39*0*(0+1)/r\string^2,-2.31E-28/r+6.11E-39*1*(1+1)/r\string^2,\\-2.31E-28/r+6.11E-39*2*(2+1)/r\string^2,-2.31E-28/r+6.11E-39*3*(3+1)/r\string^2,\\-2.31E-28/r+6.11E-39*10*(10+1)/r\string^2],r=5E-11..10E-10,\\y=-0.5E-17..0.5E-17,thickness=2);}
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/effective_potential_energy.jpg}
+		\end{center}	
+		\caption{Plot of the effective potential energy with Maple 4.00b for various $l$ and $Z$}
+	\end{figure}
+	where the legends were added afterwards with a text processor software. The reader will notice especially the case where $l=1$ that matches to the case of the figure indicated by the majority of graduate books of physics. Either with a zoom:\\
+
+	\texttt{>plot(-2.31E-28/r+6.11E-39*1*(1+1)/r\string^2,r=5E-11..10E-10,thickness=2, color=green);}
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/effective_potential_energy_l_equal_1.jpg}
+		\end{center}	
+		\caption{Plot of the famous effective potential energy with Maple 4.00b for  $l=1$ and $Z=1$}
+	\end{figure}
+
+	The first graph also tells us quite clearly that for $l= 0$ the electron has a negative potential energy that firmly holds it in the orbit of the proton. By cons already at $l= 1$ we guess that the point of stability of the electron is where the derivative is zero. Beyond the $l= 1$, in the case of a nucleus with a single proton, the electron is not naturally linked anymore since its potential energy tends to be positive. The reader can also have fun with Maple by making vary $Z$ and $l$. He will see that the effective potential energy is very sensitive to these parameters. For example, the plot below shows the effective potential energy with $l= 4$ and $Z = 1$ (thus unstable atom) and then with $l = 4$ and $Z = 6$ (which corresponds rather to an excited state):\\
+
+	\texttt{>plot([-2.31E-28*1/r+6.11E-39*4*(4+1)/r\string^2,-2.31E-28*6/r+6.11E-39*4*(4+1)/r\string^2],\\r=5E-11..10E-10,thickness=2);}
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/effective_potential_energy_l_equal_1_varous_z.jpg}
+		\end{center}	
+		\caption{Plot of the effective potential energy for $l=1$ and various $Z$}
+	\end{figure}
+	
+	It is customary in practice to consider that:
+	
+	is to a given factor (electric charge factor) an "\NewTerm{effective electrical potential}\index{effective electrical potential}" or "\NewTerm{electric screened potential}\index{electric screened potential}". Indeed by defining the electric potential (\SeeChapter{see section Electrostatics}), there are only an electri charge factor ratio between the electric potential energy and the electric potential. So we have:
+	
+	
+	\begin{flushright}
+	\begin{tabular}{l c}
+	\circled{90} & \pbox{20cm}{\score{3}{5} \\ {\tiny 49 votes,  66.12\%}} 
+	\end{tabular} 
+	\end{flushright}
+
+	%to make section start on odd page
+	\newpage
+	\thispagestyle{empty}
+	\mbox{}
+	\section{Molecular Chemistry}
+	\lettrine[lines=4]{\color{BrickRed}B}olecular chemistry is the central area that interconnects thanks to the study of molecules many promising advanced technologies of the early 21st century which are to name only the best known: molecular biology, molecular materials, molecular electronics, polymers, etc.
+Orbital approximation
+
+	Knowing it was found experimentally that a single molecule can have several very different functions, its theoretical study allows to use them better (sometimes better performance in terms of R\&D) in its areas of application. The reader will therefore understand that, as usual in this book, that we will focus here only on the theoretical aspect (mathematical) of molecular chemistry even if we limit ourselves only to theoretical developments made between the years 1910 and about 1935 (beyond the complexity of theories require too many pages to a general book as ours).
+	
+	We are in the beginning of the 21st century at the infancy of the discovery of what nature has done with plenty of time and chance (probabilities): that is to say complex molecules working as nanomachines capable locally (active site) to filter, oxidize, to make catalysis ... and many other manipulations (there is just to observe your own body!).
+	
+	A molecule is often treated in school classes with the Schrödinger equation (so no relativistic case and no consideration of the spins) in the usual form (\SeeChapter{see section Wave Quantum Physics}):
+	
+	or also in a stationary from (time-independent) where as a reminder $\Psi$ is a eigenfunctions and $E$ an eigenvalue of the application $H$.
+	
+	In reality, the wave functions are impossible to calculate normally with contemporary mathematical tools and the only thing we can do are numerical calculations (perturbation method). This is why some chemistry centers are transformed over time into data centers where the predictive character (and inexpensive) of quantum chemistry is becoming more and more important.
+	
+	It remains of course essential, as always, to understand how the theoretical models are built and their underlying assumptions.
+	
+	But we can still thanks to calculations predict the form of reasonable size of molecules, the energy of their internal connections, their energy capacity under stress deformation, the shape of the molecular orbitals (M.O.), energy state transitions (when parts of the molecule move therein), their reactivity vis-a-vis of a reaction medium...
+	
+	We commonly distinguish two cases of study of the molecular chemistry:
+	\begin{enumerate}
+		\item Quantum mechanics: all interactions between particles are taken into account under the assumption of some acceptable simplifications.
+		\item Molecular mechanics: For large molecules, we are note concerned anymore over the electronic problem, but the interaction of certain parameters on which we want to focus.
+	\end{enumerate}
+	For example, hemoglobin (protein carrying oxygen carrying in the muscles) is a huge molecular structure which we will study only active site with the tools of quantum mechanics. The overall behavior of the molecule itself is treated with the molecular mechanics tools.
+	
+	It follows that excepts for hydrogen-like atoms, we can not analytically describe a molecule from a purely quantum point of view! All current quantum methods rely on one or more approximations. The wave functions are therefore approximated and the level of calculation is adjusted according to what we want to show and the precision that we seek (seeking to minimize the computation time for cost problems...). The good understanding of approximations permits to express simple models requiring only a minimum of calculations (often trivial).
+	
+	We propose here to show two common models (and the most simplest):
+	
+	\subsubsection{Orbital Approximations}
+	A molecule is obviously an extremely complex problem: $N$ nuclei, $n$ electrons and everything is moving!
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/vibrating_molecule.jpg}
+		\end{center}	
+		\caption{Example of molecule where a almost everything is moving}
+	\end{figure}
+	The Hamiltonian (\SeeChapter{see section Wave Quantum Physics}):
+	
+	is then a nightmare but in the intuitive form (the subscript $G$ of the Hamiltonian means "General") below:
+	
+	where:
+	
+	\begin{enumerate}
+		\item $\displaystyle-\sum_{k=1}^{N}\frac{\hbar^2}{2M_k}\vec{\nabla}_k^2$ is the kinetic energy of the $k$ nuclei of mass $M_k$ in the molecule.
+
+		\item $\displaystyle-\sum_{i=1}^{n}\frac{\hbar^2}{2m_e}\vec{\nabla}_i^2$  is the kinetic energy of the $n$ electrons n mass $m_e$.
+
+		\item $\displaystyle-\sum_{k=1}^{N}\sum_{i=1}^{n}\frac{Ze^2}{4\pi\varepsilon_0 r_{ik}}$ is the potential energy due to the attraction electron(-)/nucleus(+).
+
+		\item $\displaystyle\mathop{\sum_{i=1}}_{j>1}^{n-1}\frac{e^2}{4\pi\varepsilon_0 r_{ik}}$ is the potential energy of the repulsion electron(-)/electron(-).
+
+		\item $\displaystyle\mathop{\sum_{k=1}}_{i>k}^{N-1}\frac{Z_kZ_ie^2}{4\pi\varepsilon_0 r_{ik}}$ is the potential energy of repulsion nucleus(+)/nucleus(+).
+	\end{enumerate}
+
+	Often we find these terms in the following form of the Schrödinger equation in the literature:
+	
+	A first approximation we might try is to decouple the movement of the nuclei of the electrons. Indeed, as the nucleus is much more massive (about 2,000 times) than the cloud of electrons, the center of mass is assimilated to the nucleus of the atom and all the motion to the entire electron cloud. This approximate approach is well known under the name "\NewTerm{Born-Oppenheimer approximation}\index{Born-Oppenheimer approximation}":
+	
+	which then allows us to study the molecular orbitals. But unfortunately this approximation is not sufficient because of the repulsion interelectronic term (the double sum) that prevents using the separation of variables technique as we did in the section of Quantum Chemistry with the hydrogenoid-atom.
+	
+	Moreover, this latter equation is also written as the first line of the couple of equation below (Schrödinger equation of electrons and nuclei):
+	\begin{subequations}
+		\begin{align}
+		&\underbrace{(T_e+V_{ee}+V_{en})}_{H_{\text{el.}}}\Psi_{el}=E\Psi_{el}\\
+		&\underbrace{(T_n+V_{nn})}_{H_{\text{nuclei}}}\Psi_n\Psi_{el}=E\Psi_n\Psi_{el}
+		\end{align}
+	\end{subequations}
+	This system of equations is what some name the "\NewTerm{adiabatic approximation}\index{adiabatic approximation}" (???).
+	
+	The idea that then comes to mind will be using the following property:
+	
+	Given two operators $A$ and $B$, $f (u)$ and $g(v)$ their respective eigenfunctions associated with eigenvalues $a$ and $b$. Then $f (u) g (v)$ is an eigenfunction of the operator $A + B$ with associated eigenvalue $a + b$.
+
+	Which is written:
+	
+			
+	\begin{dem}
+		We have:
+		
+		\begin{flushright}
+			$\square$  Q.E.D.
+		\end{flushright}
+	\end{dem}
+	And that's what we will use to break the $n$-electronic Hamiltonian $H_{el}$ into a sum of independent-electron Hamiltonian knowing of the above that if we find the eigenfunction for each (which is relatively easier) if will bu sufficient to simply multiply them to get the overall eigenfunction.
+
+	Thus, we write:
+	
+		and therefore we have to find for each $i$:
+	
+	To then have:
+	
+	with therefore:
+	
+	This approach by one-electron Hamiltonian approach will lead us to replace:
+	
+	by the sum of Hamiltonian for an electron named "\NewTerm{effective Hamiltonian}\index{effective Hamiltonian}":
+	
+	This approximation method is sometimes named in theoretical chemistry "\NewTerm{independent electron approximation}\index{independent electron approximation}" or "\NewTerm{orbital approximation}\index{orbital approximation}". It consists therefore to include the electron-electron interactions and to write that each electron move in an average potential resulting from the presence of all other electrons.
+	
+	The "\NewTerm{Slater method}\index{Slater method}" consists by definition to write the latter relation in the form:
+	
+	where $\sigma$ is named the "\NewTerm{screen constant}\index{screen constant}".
+	
+	The Slater method basically means replacing the purely electronic terms by a constant. It can be regarded as a parametric method since the constants were determined purely experimentally.
+	
+	The principle of empirical calculation of the screening constant is relatively simple: In a poly-electronic atom, the core electrons are on much contracted orbits  while the valence electrons that will be responsible for the chemical properties of the atom in question are on orbits much more "relaxed".
+	
+	The attraction of the nucleus on the latter electrons is much lower than that exerted on the core electrons and these electrons only receive a portion of the atomic charge.
+	
+	Slater then proposed that the effective charge, which is usually denoted by $Z^*$ could be calculated by taking into account the screening constant. This constant represents then the average effect of the other electrons on the considered electron  of the effective Hamiltonian $i$:
+	
+	For a peripheral electron, we will need to consider its screen constant is due to all electrons placed on orbits equal or below its own. The tradition (or rather the "trick") is that the calculation is done by combining atomic orbitals in several groups $1s/2s, 2p/3s, 3p/3d/4s, 4p/4d/4f/5s, 5p/$ etc.
+	
+	Then the calculation is simple because it is based on an array of predefined values and we simply have to add the screening contributions of all the electrons following the table below:
+	
+	This table deserves some explanation of course !:
+	
+	The index indicates the number of the group that contributes to the screening constant while $n$ is the number of the group of electron that we consider.
+	
+	\pagebreak
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	\textbf{{\Large \ding{45}}Example:}\\\\
+	In the case of the Carbon of configuration $1s^2 2s^2 2p^2$, the nuclear charge is $Z=6$. One electron $1s$ is shielded by onlye the another $1s$ electron, the effective charge it sees is therefore:
+	
+	A $2s$ or $2p$ electron is shielded by the two $1s$ electrons and by the other $3$ electrons $2s$ and $2p$. The effective charge by which it is attracted is then:
+	
+	So we see that the effective charge experienced decreases rather quickly!
+	\end{tcolorbox}
+	
+	\subsection{LCAO Method}
+	A linear combination of atomic orbitals or LCAO is a quantum superposition of atomic orbitals and a technique for calculating molecular orbitals in quantum chemistry. In quantum mechanics, electron configurations of atoms are described as wave functions. In mathematical sense, these wave functions are the basis set of functions, the basis functions, which describe the electrons of a given atom. In chemical reactions, orbital wave functions are modified, i.e. the electron cloud shape is changed, according to the type of atoms participating in the chemical bond.
+	
+	So as already mention, this method, rather qualitative, considers that the molecular wave function is a "\NewTerm{Linear Combination of Atomic Orbitals LCAO}\index{Linear Combination of Atomic Orbitals}" unlike the previous method where we multiply the effective Hamiltonian.
+	
+	This method is important because it is the basis of much of the current vocabulary of chemists when the chemistry done is cutting edge one!
+	
+	Let us take the example of the dihydrogen molecule $H_2$. The idea is then following:
+	
+	If we have the function of the atomic orbital $1s_A$ of $H_A$ and respectively the function $1s_B$ of $H_B$, then we assume that the dicentric molecular orbital (linked to two atoms) thereof is given by:
+	
+	which defines a quantum system with two eigenstates.
+
+	But as we well know, in reality, only the square of the wave function has a physical sense (probability of presence). Thus, if we assume that the wave function has no value in $\mathbb{C}$, we have for the single electron of interest ($1s$):
+	
+	where we assume that:
+	\begin{itemize}
+		\item $a^2\Psi_A^2$ represents the probability of presence to be near $A$.
+		\item $b^2\Psi_B^2$ represents the probability of presence to be near $B$.
+		\item $2ab\Psi_A\Psi_B$ represents the probability of presence of the electron that do the link $A-B$.
+	\end{itemize}
+	In the particular case of the symmetric diatomic molecule we have chosen as an example, the atoms $A$ and $B$ perform the same function and there is no reason that the electron is closer to $A$ than to $B$ or vice versa.
+
+	Thus, the probability of finding the electron near $A$ is equal to the probability of finding it near $B$.
+	
+	Moreover, in this case the orbitals $\Psi_A$ and $\Psi_B$ are completely identical ($1s$ orbitals, both of the same atom) and there is therefore no need to distinguish them. So we have:
+	
+	We have two solutions for $\Psi_{AB}$ that are (these two solutions can be found in very different notations in the literature):
+	
+	and:
+	 
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	Caution! We can not put for the last two relations that $\Psi_A=\Psi_B$. The latter equality occurs at any point only if the distance between the two nucleus is zero (which is unlikely) or, if they are spaced a distant of a certain value $D$ in the middle thereof.
+	\end{tcolorbox}
+	These two expressions are simultaneously solutions of the Schrödinger equation. So we get two molecular orbitals from the two atomic orbitals in the case of symmetrical diatomic molecule.
+	
+	The function:
+	
+	is named "\NewTerm{bonding function}\index{bonding function}" because it corresponds to a reinforcement of the probability of presence of the electron between atoms $A$ and $B$ which corresponds to the creation of the bond!
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/bonding_link.jpg}
+		\end{center}	
+	\end{figure}
+		
+	Conversely, the function:
+	
+	is named "\NewTerm{anti-bonding function}\index{anti-bonding function}" because it corresponds to a reduction of the probability of presence of the electron between atoms $A$ and $B$ which corresponds to the destruction of the bond!
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/bonding_unlink.jpg}
+		\end{center}	
+	\end{figure}
+	
+	Ultimately, by overlapping, the two atomic orbitals with the same energy give birth to two molecular orbitals of different energy, a stabilized binding and the other antibonding destabilized.
+
+	We have obviously from what we see just above that, in more complex cases, the energy level of the bonding molecular orbital is smaller than the antibonding (we will prove this rigorously in details below).
+
+	Thus, it takes more energy to ionize respectively the electron of the binding orbital $\sigma$ than to ionize the electron of the antibonding orbital $\sigma^{*}$. It is commonly accepted that the energy of the bond function is stronger than the antibonding one (but we will make the proof further below).
+
+	Let us also indicate that in chemistry, a chemical bond wherein each of the bonded atoms is sharing an electron from one of its outer layers to form a pair of electrons linking two atoms is commonly known as "\NewTerm{covalent bond}\index{covalent bond}".
+	
+	The chemists then say the covalent bond involves the equitable sharing of only one pair of electrons, named "\NewTerm{bonding pair}\index{bonding pair}" (but in fact where only one electron is really shared). Each atom provides an electron, the electron pair is then delocalized between two atoms as we have shown.
+
+	These are the reasons why we commonly say that the bond $\sigma$ is a covalent chemical bond between two atoms created by orbital axial overlap.
+
+	Now let us in-deep this approach! The molecular orbitals are to be normalized as we know. Which means that:
+	
+		What gives, since the atomic orbitals are normalized for $\Psi_1$ and are real functions:
+	
+	Since $a$ (real number in our case) is imposed as a constant, it comes immediately:
+	
+	Therefore for $\Psi_{AB}^1$:
+	
+	Identically, we have for $\Psi_{AB}^2$:
+	
+	If we have $S_{12} 1$, it comes the following format that we find in many books:
+	
+	Let us make a small example using as orbital, the lowest atomic orbital (1$s$) of the hydrogen atom in the case of a dihydrogeneous bond $H_2$ for which we have proved at the end of that section of Quantum Chemistry of quantum chemistry that:
+	
+	Therefore it comes:
+	
+	with for recall:
+	
+	It comes then for the molecular binding orbital of level $s$:
+	
+	and for the antibonding of also the $s$ level:
+	
+	We then see immediately that $\sigma^*_s$ vanishes in the middle of the two protons because in this place $r_1=r_2$. The molecular antibonding orbital therefore has a nodal plane and the electrons are mainly located on the protons.
+	
+	By cons, for the molecular orbital $\sigma_s$ the density does not vanish. Then we understand easily that an electron of $\sigma_s$ ensures the stability of the molecule and is therefore responsible for the chemical bond.
+	
+	We therefore conclude that the electronic stabilization due to the two identical orbital interaction is proportional to their recovery. More the recovery is big, the more the stabilization is important.
+	
+	There is a more technical approach using Dirac notation (\SeeChapter{see section Wave Quantum Physics}) and that has the advantage of allowing the determination of the eigenvalues of energy.
+
+	First we write the general expression of the time independant Schrödinger equation with the Bra-Ket notation for one molecular orbital, superposition of two atomic orbitals:
+	
+	Either in explicit form:
+	
+	If we multiply by the bra $\langle \Psi_A|$  on the left and taking into account that $a$, $b$ and the specific eigenvalues of the energy are constants, we get the following equation:
+	
+	Similarly, we get the bra $\langle \Psi_B|$:
+	
+	Let us simplify the notations even more:
+	
+	By symmetry of the problem in the case of dihydrogen, we put:
+	
+	which are named "\NewTerm{resonance integrals}\index{resonance integrals}" because it is a term relating to the combination (resonance) of the both atomic orbital relative to the two atoms that made the molecular structure.
+
+	We also have:
+	
+	which are named "\NewTerm{Coulomb integrals}\index{Coulomb integrals}" because they correspond according to the fifth postulate of Wave Quantum Physics (see section of the same name) to the average value of the total energy of the electron.
+
+	We have obviously:
+	
+	which are named "\NewTerm{recovery integrals}\index{recovery integrals}" because the two atomic orbitals of the same type of each atom overlap.
+	
+	And finally, we have always have by symmetry of our particular case:
+	
+	We can then write, since the recovery integrals are unitary:
+	
+	These two equations are named "\NewTerm{secular equations}\index{secular equations}". The trivial solution is a priori not physical because it would mean that the electron has a zero probability density at any point in the space corresponding at $a=b=0$.
+
+	There is a nontrivial solution and unique solution if and only if the following determinant (\SeeChapter{see section Linear Algebra}), known in molecular chemistry under the name "\NewTerm{secular determinant}\index{secular determinant}", is equal to zero:
+	
+	As we have by symmetry in our particular case:
+	
+	Therefore it comes:
+	
+	Hence:
+	
+	This gives us two solutions ($+$):
+	
+	and minus ($-$):
+	
+	Therefore we have:	
+	
+	But to be able to calculate the energy levels in detail, we must still have the shape of the Hamiltonian... and that using the both electrons of the dihydrogen molecule is quite difficult... To simplify the study, we reduce ourselves to the case of the cation (positive ion) $H_2^{+}$ consisting of two protons and one electron:
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/dihydrogen_cation.jpg}
+		\end{center}	
+		\caption{Simplified study of the dihydrogen cation $H_2^+$}
+	\end{figure}
+	We then have base on the relation we ahve obtained at the beginning of this section:
+	
+	The following relation:
+	
+	where the first two terms in the brackets are for recall associated with the potential energy of the electron and the last to the potential repulsion energy of proton (the first term on the right of the equality is the kinetic energy of the electron).
+
+	Now let us try to sort the energy of these two molecular orbitals. For this, we write:
+	
+	Let us recall that for a system to be stable, the energies  $E_n$ must be negatives, this corresponding to the stable states (we need a supply of energy to take them out) and request from us because of the shape of $E_2$:
+	
+	Knowing this it comes:
+	
+	Therefore, we see that the notations are not consistent with the use in quantum physics because normally the index $1$ is reserved to the lowest energy. So we will write in the future:
+	
+	with the associated eigenfunctions  $\Psi_1$ and $\Psi_2$ and therefore:
+	
+	We can also noticed an important thing! This is that if we consider the atoms in isolated, the interaction terms cancel and we have:
+	
+	Therefore we have the qualitative difference between a single atom and a simple diatomic (ionized) system:
+	
+	This means that the energy of the lowest level of a diatomic ionized molecule is less than the energy of a single atom which is near $\alpha$. This observation confirms that the system is stabilized in energy compared to two isolated atoms, which seems consistent with the experimental determination of the existence of such molecules.
+	
+	The traditional is that chemists represent the energy differences in the following form for our particular case:
+	\begin{figure}[H]
+		\begin{center}
+		\includegraphics{img/chemistry/dihydrogen_cation_energy_levels.jpg}
+		\end{center}	
+		\caption{Energy levels of the dihydrogen cation $H_2^+$}
+	\end{figure}
+	We therefore conclude - by generalizing a little bit... - that when two atoms (each contributing with an electron) combine, their atomic orbitals will combine to generate two molecular orbitals, one of energy level $\Psi_1$ and the second of higher energy level $\Psi_2$ than that of the isolated atoms. Thus, the split up that will make leave one of the electron with one of atoms will be exothermic in comparison to the single atoms.
+	
+	Up to now we have discussed the electronic states of rigid molecules, where the nuclei are clamped to a fixed position. In this section we will improve our model of molecules and include the rotation and vibration of diatomic molecules.
+
+	\pagebreak
+	\subsection{Molecular Rotational Energy Levels}
+	As we have seen in the section of Quantum chemistry, for analytical reasons we consider molecules als rigid rotators.
+
+	The rigid rotators are commonly classified into four types:
+	\begin{itemize}
+		\item Spherical rotors: have equal moments of inertia (e.g., $\mathrm{CH}_4$).
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/molecule_ch4.jpg}
+		\end{figure}
+		
+		\item Symmetric rotors: have two equal moments of inertial (e.g., $\mathrm{NH}_3$).
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/molecule_nh3.jpg}
+		\end{figure}
+		
+		\item Linear rotors: have one moment of inertia equal to zero (e.g., $\mathrm{CO_2}$, $\mathrm{HCl}$).
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/molecule_co2.jpg}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/molecule_hcl.jpg}
+		\end{figure}
+
+		\item Asymmetric rotors: have three different moments of inertia (e.g., $\mathrm{H}_2\mathrm{O}$).
+		\begin{figure}[H]
+			\centering
+			\includegraphics{img/chemistry/molecule_h2o.jpg}
+		\end{figure}
+	\end{itemize}
+	Let us now recall that have proved in the section of Quantum Chemistry that for the rigid rotator the part of the Hamiltonian dedicated to the rotation of energy is:
+	
+	Where $L^2$ was is an operator but from which we know from our study ow Wave Quantum Physics that the eigenvalues are:
+	
+	and where $r$ is the distance between the two corpuscules (nucleus and electron in the context of our study of the hydrogenous atom in the section of Quantum Chemistry) and
+	
+	In the context of diatomic molecules $A$ and $B$ it is more common to write $r_{AB}$ and:
+	
+
+	In the section of Wave Quantum Physics we have seen that we must consider the spin we have have to write the more general form:
+	
+	Therefore:
+	
+	In the old style spectroscopic literature, the rotational term values $F(J) = E(J)/hc$ are used instead of the energies....The previous relation is then written:
+	
+	with the "\NewTerm{rotational constant}\index{rotational constant}":
+	
+	
+	We also know from the section of Classical Mechanics that:
+	
+	Therefore:
+	
+	That simplifies to:
+	
+	Therefore:
+	
+	
+	The energy separation between the rotational levels $J$ and $J+1$ is given obviously by:
+	
+	and increase linearly with $J$.
+	
+	Let us now calculate the moment of inertia, that we will denoted $I$ to avoid the confusion with the orbital kinetic momentum $J$ used above, of a diatomic molecule. Let us imagine the diatomic molecule as a system of two tiny spheres at either end of a thin weightless rod.
+	\begin{figure}[H]
+		\centering
+		\includegraphics{img/chemistry/diatomic_molecule_moment_inertia.jpg}	
+		\caption{Construction for the study of inertia momentum of a diatomic molecule}
+	\end{figure}
+	Let $C$ be the center of mass of the molecule. Let $r_1$ and $r_2$ be the distances of the two atoms of respective masses $m_1$, $m_2$ from the center of mass $C$ of the molecule:
+	We see that:
+	
+	and we have (\SeeChapter{see section Classical Mechancics}):
+	
+	Therefore:
+	
+	Hence:
+	
+	After rearranging we get:
+	
+	or:
+	
+	Similarly:
+	
+	Let $I$ be the moment of inertia of the diatomic molecule about an axis passing through the center of mass of the molecule and perpendicular to bond length.
+
+	Then we have seen in the section of Classical Mechanics that:
+	
+	or:
+	
+	thus:
+	
+	after simplification:
+	
+	Hence:
+	
+	So finally for a diatomic molecule (or any pair of object turning around a common center) we get the following moment of inertia\index{moment of inertia of a diatomic molecule}:
+	
+	Hence the fact that we often found in the literature the previous main relations under the form:
+	
+	and:
+	
+	Therefore, as: 
+	
+	the frequencies at which transitions can occur are given by :
+	
+	Notice that for $J_z=0$ we have a non-null zero point energy and frequency:
+	
+	
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	\textbf{{\Large \ding{45}}Example:}\\\\
+	The molecule $\mathrm{NaH}$ is found to undergo a rotational transition from  $J=0$ to $J=1$ when it absorbs a photon of frequency $2.94 \times 10^{11}$ [Hz]. We want to know the equilibrium bond length of the molecule.\\
+
+	For this purpose we use $J_z=0$ in the formula for the transition frequency 
+	
+	Solving for $r_0$ gives:
+	
+	The reduced mass is given by:
+	
+	which is in atomic mass units or relative units. In order to convert to kilograms, we need the conversion factor $1\;[\text{au}]= 1.66\cdot 10^{-27}$ [kg]. Multiplying this by $0.9655$ gives a reduced mass of $1.603\cdot 10^{-27}$ [kg]. Substituting in for $r_0$ gives:
+	
+	\end{tcolorbox}
+
+	\pagebreak
+	\subsection{Molecular Vibrational Energy Levels}
+	Let us consider the simple case of a vibrating diatomic molecule, where restoring force is proportional to displacement such that (\SeeChapter{see section Mechanical Engineering}):
+	
+	The potential energy is a we proved it in the previously mentioned section, but with the notation of Quantum Physics:
+	
+	Now remember that we have proved in the section of Wave Quantique Physique the Schrödinger equation was:
+	
+	After rearrangement:
+	
+	And using the conventional notations in chemistry and quantum physics:
+	
+	As we consider a linear vibration mode, the know that we can use the reduced mass to analyze the system (\SeeChapter{see section Classical Mechanics}). Therefore we:
+	
+	Hence:
+	
+	And as we have prove it in the section of Wave Quantum Physique we have:
+	
+	with for recall $n\in \mathbb{N}$.
+	
+	\begin{flushright}
+	\begin{tabular}{l c}
+	\circled{90} & \pbox{20cm}{\score{3}{5} \\ {\tiny 23 votes,  64.35\%}} 
+	\end{tabular} 
+	\end{flushright}
+
+	%to make section start on odd page
+	\newpage
+	\thispagestyle{empty}
+	\mbox{}
+	\section{Analytical Chemistry}
+	\lettrine[lines=4]{\color{BrickRed}C}hemistry is a very complex $n$-body science that mathematics can not explained without the input of numerical computer simulations or approximations regarding the use of quantum theory (\SeeChapter{see Atomistic section}). Until these tools are powerful enough and accessible to everyone, chemistry remains a primarily experimental science based on the observation of different properties of matter and we would like here give some very important definitions (which we find also elsewhere in other fields as chemistry).
+	
+	Analytical chemistry is concerned with the chemical characterization of matter and the answer to two important questions: what is it (qualitative analysis) and how much is it (quantitative analysis). Chemicals make up everything we use or consume, and knowledge of the chemical composition of many substances is important in our daily lives. Analytical chemistry plays an important role in nearly all aspects of chemistry, for example, agricultural, clinical, environmental, forensic, manufacturing, metallurgical, and pharmaceutical chemistry. The nitrogen content of a fertilizer determines its value. Foods must be analyzed for contaminants (e.g., pesticide residues) and for essential nutrients (e.g., vitamin content). The air we breathe must be analyzed for toxic gases (e.g., carbon monoxide). Blood glucose must be monitored in diabetics (and, in fact,
+most diseases are diagnosed by chemical analysis). The presence of trace elements from gun powder on a perpetrator’s hand will prove a gun was fired by that hand. The quality of manufactured products often depends on proper chemical proportions, and measurement of the constituents is a necessary part of quality assurance. The carbon content of steel will influence its quality. The purity of drugs will influence their efficacy.
+
+	In this section, we will focus only on the mathematical tools and techniques for performing these different types of analyses.
+
+	\textbf{Definitions (\#\mydef):}	
+	\begin{enumerate}
+		\item[D1.] A "\NewTerm{subjective property}\index{subjective property}" is a property based on personal / individual printing, for example: beauty, sympathy, color, utility, etc.
+		
+		\item[D2.] An "\NewTerm{objective property}\index{objective property}" is an experienced property (which can not be contradicted), for example: mass, volume, shape, etc.
+		
+		\item[D3.] A "\NewTerm{qualitative property}\index{qualitative property}" is a descriptive property given using words. For example: oval, magnetic, conductive, etc.
+		
+		\item[D4.] A "\NewTerm{quantitative property}\index{quantitative property}" is a property that can be measured. For example: mass, volume, density, etc.
+		
+		\item[D5.] A "\NewTerm{characteristic property}\index{characteristic property}" is an exclusive property that identifies a pure substance. It does not change even if it is physically transformed material, for example: its density, its boiling point, its melting point, etc.
+		
+		\item[D6.] A "\NewTerm{characteristic property}\index{characteristic property}" is an exclusive property that identifies a pure substance. It does not change even if it is physically transformed material, for example: its density, its boiling point, its melting point, etc.
+		
+		\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	We know about $2,000,000$ different pure substances in the early 21st century (that is to say ... there is work behind it).
+		\end{tcolorbox}
+		
+		\item[D7.] We name "\NewTerm{compound bodies}\index{compound bodies}", the bodies, that subjected to chemical processes, restore their components in the form of pure substances.
+		
+		\item[D8.] If we make the separation of mixtures and the decomposition of compositions, we finally get the bodies that are non-decomposable by conventional chemical methods; we name them "\NewTerm{elements}\index{elements}" or "\NewTerm{simple bodies}\index{simple bodies}".
+		
+		\item[D9.] The smallest part of a chemical combination yet having all of the properties thereof is the "\NewTerm{molecule}\index{molecule}" of this combination. The smallest part of an element or simple body is the "\NewTerm{atom}\index{atom}" of that element.
+	\end{enumerate}
+	Some general reminders first:
+	\begin{enumerate}
+		\item A mixture is named "\NewTerm{heterogeneous}\index{heterogeneous}" in chemistry if the components are immediately discernible to the naked eye or through the microscope.
+		
+		\item A mixture is said to be "\NewTerm{homogeneous}\index{homogeneous}" in chemistry if the components are not discernible to the naked eye or through the microscope.
+		
+		\item A system or body is said to be "\NewTerm{isotropic}\index{isotropic}" if it has identical values of a property in all directions otherwise it is said "\NewTerm{anisotropic}\index{anisotropic}".
+	\end{enumerate}
+	
+	\subsection{Simple Mixtures}
+	Before going into more or less complicated equations, the simplest case of application of mathematics to chemistry by which we can start is the management of mixtures for analysis and control operations of simple chemical reactions with two mixtures.
+	
+	Let us consider two typical and particular examples as theoretical introduction:
+	\begin{enumerate}
+		\item Given a solution (yellow) of $10$ milliliters of a solution containing an acid concentration at $30\%$. How many milliliters of pure acid (blue) should we add to increase the concentration (green) to $50\%$?
+		\begin{figure}[H]
+			\begin{center}
+			\includegraphics{img/chemistry/chemistry_simple_mixture.jpg}
+			\end{center}	
+			\caption{The joy of mixtures...}
+		\end{figure}
+		Since the unknown is the amount of pure acid to be added, we will denote it by $x$. Then we have:
+		
+		That gives:
+		
+		It comes the obviously:
+		
+		Therefore $4$ milliliters of acid should be added to the original solution.
+		
+		\item  A canister contains $8$ liters of gasoline and oil to run an aggregate. If $40\%$ of the initial mixture is of the essence, how much should we remove of the mixture (pink) to replace it with pure gasoline (green) so that the final mixture (light green) contains $60\%$ gasoline?
+		\begin{figure}[H]
+			\begin{center}
+			\includegraphics{img/chemistry/chemistry_simple_mixture_gazoline.jpg}
+			\end{center}	
+			\caption{The joy of mixtures by for diyers and military ...}
+		\end{figure}
+		We denote the unknown $x$ that is the number of liters of the initial mixture to remove and replaced by the pure essence being of equal amount also $x$. Then we have:
+		
+		That gives:
+		
+		We have then obviously:
+		
+		So approximately $2.6$ liters should be removed from the original mixture and be replaced by approximately $2.6$ liters of pure essence.
+	\end{enumerate}
+	In short this is for all mixtures in this book until now. We can go much further and do much more complicated with more unknowns but we'll stop there for now.
+	
+	\subsection{Reactions}
+	Since the main study in chemistry is to observe the results of pure substances mixtures and/or of compounds mixtures, it is first necessary to deal with  the basic rules governing these mixtures under normal conditions of pressure and temperature (N.C.P.T).
+	
+	We should first clarify that we are not going to study in this section what creates the connections between the elements, as this is the role of quantum and molecular chemistry (see previous sections). Furthermore, we insist on the fact that every theoretical element will be illustrated with a practical example which can be useful sometimes to better understand.
+	
+	Let us now consider a closed chemical system (without mass transfer therefore!). We translate the change in the composition (if applicable and if have there is one) of the chemical system with a reaction equation of the form (the system does not always go both ways!):
+	
+	named "\NewTerm{balance equation}\index{balance equation}" where the coefficients $v_i \in \mathbb{N}^*$ are named  "\NewTerm{stoichiometric coefficients}\index{stoichiometric coefficients}" in the sense that they indicate the "golden proportions", strictly named "\NewTerm{stoichiometric ratio}\index{stoichiometric ratio}" necessary such that under normal conditions the reaction can take place and where the $A_i$ are the reactants (pure or compounds) and the ${A'}_i$ the formed products.
+	
+	Caution! In the writing of the above equation, we require that all the $A_i$ without exception react to the chemical reaction and that therefore all the $v_i$ are dependents.
+	
+	If the "golden proportions" are respected (such that the coefficients are well stoichiometric) and exist when writing of the reaction equation, then for any $\alpha \in \mathbb{N}$ we have:
+	
+	this proposal can be proven only if the stoichiometric coefficients on one side or the other of the reaction vary proportionally. Experience shows that in normal conditions of temperature and pressure (N.C.T.P.) this is the case!
+	
+	Therefore, the stoichiometry of the reaction requires that if it disappears $x_1$ moles of $A_1$, $x_2$ moles of $A_2$  respectively with a variation of material of the products $\mathrm{d}n_1,\mathrm{d}n_2,\ldots $, it will appear accordingly ${x'}_1$ moles of ${A'}_1$, ${x'}_2$ moles of ${A'}_2$, ... with respectively a variation of material of the products $\mathrm{d}{n'}_1,\mathrm{d}{n'}_2,\ldots $... by respecting the proportionalities of the stoichiometric coefficients such that we can write the "\NewTerm{material balance equation}\index{material balance equation}":
+	
+	where $\mathrm{d}\xi$ is named the "\NewTerm{elementary reaction progress}\index{elementary reaction progress}" (frequently we will take the absolute values of the ratios to not have to think about the sign of the variations).
+	
+	The division of the variations $\mathrm{d}n_1,\mathrm{d}n_2$ and $\mathrm{d}{n'}_1,\mathrm{d}{n'}_2$  by their stoichiometric coefficients is justified only for normlization reasons having for purpose to bring $\mathrm{d}\xi$ to a value between $0$ and $1$ (between $0\%$ and $100\%$...).
+	
+	These last equalities simply indicate that if one of the reactive products disappear in a given quantity, the other reactants have their quantity that decreased in relation to their stoichiometric coefficient so as to maintain the golden proportions of the reaction.
+	
+		The writing of the energy balance can be simplified by the introduction of algebraic stoichiometric coefficients $v_i$ such that: $v_i>0$ for a formed product, $v_i<0$ for a reactive product.
+
+	Finally we can write:
+	
+	we also often find in the literature with the absolute value at the numerator!
+
+	Therefore, with this algebraic convention, the reaction equation as it exists, can be written:
+	
+	which means that the algebraic sum of the total number of pure compounds of the reactants and products formed is always zero.
+
+	It is clear that at the initial time of the reaction we choose for the progress the value $\xi=0$ (its maximum value being equal to unity), time at which the quantities of material are equal to $n_{i,0}$.
+
+	The integration of the differential expression of material balance obviously gives:
+	
+	Therefore:
+	
+	relation that we found in chemical progress tables (see further below), without forgetting that $v_i>0$ for a formed product and, $v_i<0$ for a reactive product.
+
+	This bring us to the question: What is the maximum value $\xi_{\max}$ of the progress of a reaction? 
+
+	Well the answer to that is in fact quite simple: The maximum progress value of a reaction having the stoichiometric proportions and such that it occurs when the reactants will have all disappear and therefore it is necessarily given by:
+	
+	for what we name the "\NewTerm{limiting reactant}\index{limiting reactant}", that is to say, the reactant that disappears (has always the smallest value of molarity) first and stops the expected reaction! If there is no limiting reactant, that is that at the end of the reaction all reactants have been transformed: then we say that all reactants were in stoichiometric proportion.
+	
+	It may be helpful to define the "\NewTerm{percentage of completion}\index{percentage of completion (chemistry)}" $A_i$ given by the intensive quantity:
+	
+	
+	which gives with a more formal notation:
+	
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	\textbf{{\Large \ding{45}}Example:}\\\\
+	Let us consider to illustrate these concepts the reaction (dinitrogen and hydrogen giving ammonia):
+	
+	where the Latin letters represent the pure substances (atoms) whose name does not matter to us in this book (notation proposed by Jöns Jacob Berzelius in 1813). The indices simply represent the number of combination of atoms to obtain a molecule. \\
+
+	We then have in this reaction:
+	
+	The reader will have notice that we have well following our convention for the mass balance:
+	
+	If we consider that there is one mole of each compound body, it gives us for the stoichiometric proportions (to a given factor $x\in\mathbb{R}^{*}$ for all values):
+	
+	If at any a given time $t\neq t_0$, we get by measurement:
+	
+	What is the progress of that reaction?
+
+	The answer is:
+	
+	or in other words, we are at $10\%$ of progress (logical!).\\
+	\end{tcolorbox}
+	
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	The conversion rate of $\mathrm{NH}_3$ is thereto:
+	
+	And what is the maximum progress value $\xi_{\max}$ of the limiting reactant?\\
+
+	So in the context of the above example where we have $n_{1,0}=1\;[\text{mol}]$ for the $\mathrm{N}_2$ then:
+	
+	\end{tcolorbox}
+	
+	Chemists also often use what they name a "\NewTerm{reaction progress table}\index{reaction progress table}".
+	
+	Let us take our previous example to introduce this table. We have:
+	
+	Let us seek $\xi_{\max}$ from this table. The limiting reactant is either $\mathrm{N}_2$ or $3\mathrm{H}_2$.
+
+	So for $\mathrm{N}_2$:
+	
+	and for $3H_2$:
+	
+	Each reactant having the same $\xi_{\max}$ progress, it is thus also the minimum $\xi_{\max}$. Consequently, according to the definition of limiting reactant, as the proportions are stoichiometric in the given example no reactant is limiting.
+
+	\begin{flushright}
+	\begin{tabular}{l c}
+	\circled{10} & \pbox{20cm}{\score{3}{5} \\ {\tiny 25 votes,  55.20\%}} 
+	\end{tabular} 
+	\end{flushright}
+
+	%to force start on odd page
+	\newpage
+	\thispagestyle{empty}
+	\mbox{}
+	\section{Thermochemistry}
+	\lettrine[lines=4]{\color{BrickRed}T}hermochemistry is the branch that historically focuses on thermic phenomena and to equilibrium accompanying chemical reactions. It mainly has its foundations in the thermodynamics. More technically, thermochemistry is the study of the energy and heat associated with chemical reactions and/or physical transformations. A reaction may release or absorb energy, and a phase change may do the same, such as in melting and boiling. Thermochemistry focuses on these energy changes, particularly on the system's energy exchange with its surroundings. Thermochemistry is useful in predicting reactant and product quantities throughout the course of a given reaction. In combination with entropy determinations, it is also used to predict whether a reaction is spontaneous or non-spontaneous, favorable or unfavorable.
+	
+	We can only strongly recommend the readers to have read or to read the section on Thermodynamics in the Mechanics chapter because many concepts that have been seen there will be assumed to be known in this section.
+	
+	Moreover, it is strongly recommended to read this chapter in parallel to that of Analytical Chemistry (this can be a boring but you must do with...).
+	
+	\subsubsection{Chemical transformations}
+	Given the closed system closed of the chemical reaction (\SeeChapter{see section Analytical Chemistry}):
+	
+	We will consider for simplicity that the chemical reaction is complete and that the reactants are used in stoichiometric amounts (state 1: $\Sigma_1$) to give the products formed, also in stoichiometric quantities (state 2: $\Sigma_2$).
+	
+	If the transformation is done in (quasi-)steady volume steady, work on the surrounding atmosphere is zero because (\SeeChapter{see section Thermodynamics}):
+	
+	The application of the first law of thermodynamics is reduced and allows then us to write:
+	
+	where $Q_v$ is within the thermal chemistry framework named "\NewTerm{heat of reaction at constant volume}\index{heat of reaction at constant volume}", of course exchanged between the system and the external environment (we do not write the delta $\Delta$ in front of $Q_V$ to indicate that it is a variation... by tradition...).
+	
+	Let us recall that:
+	
+	\begin{enumerate}
+		\item If $Q_V>0$ the reaction is said to be "\NewTerm{endothermic}\index{endothermic}" (the system receives heat from the external environment).
+		
+		\item If $Q_V<0$ the reaction is said to be "\NewTerm{exothermic}\index{exothermic}" (the system gives heat to the external environment).
+		
+		\item If $Q_V=0$ the reaction is said to be "\NewTerm{athermic}\index{athermic}" (the system do not exchange any heat with the environment).
+	\end{enumerate}
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	Let us also recall that a closed system is not an isolated system! For a review of different definitions, the reader is referred once again to the section of Thermodynamics.
+	\end{tcolorbox}
+	
+	If the reaction is carried out at constant pressure (the most usual case in practice), that is to say isobaric, then we have:
+	
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	The choice of integration indices are different to previously to differentiate the fact that a reaction a pressure or constant volume are not necessarily identical.
+	\end{tcolorbox}
+	
+	The application of the first law of thermodynamics, between the two states, gives:
+	
+	where $Q_p$ is the amount of heat, named "\NewTerm{constant-pressure reaction heat}\index{constant-pressure reaction heat}", exchanged between the system and the external environment ($Q_P$ is a variation... even if the traditional unfortunate notation of thermodynamician does not put that in evidence...).
+	
+	Using the definition of enthalpy, we can write the last relation in the form:
+	
+	If we work with the molar volumes, those of condensed phases (therefore solid and liquid) is negligible compared to the gas molar volume, only the gas components have a very different enthalpy of their internal energy (see the example in the section of Thermodynamics) . We would therefore have under the ideal gas approximation (\SeeChapter{see section Thermodynamics}):
+	
+	In the context of the ideal gas, the prior-previous relation can be written:
+	
+	But, as (\SeeChapter{see section Continuum Mechanics}) $U_2$ and $U_3$ are both the same final states of a single complete reaction and that for a monatomic gas:
+	
+	therefore the internal energy $U_2$ and $U_3$ only depends on the number of components but ... they are equal since they are the same final state of the same reaction!
+	
+	Therefore we have:
+	
+	By putting $\Delta n=n_2-n_1$ (the difference between the number of moles of gas of formed products and those of reacting products), we can write for a chemical reaction:
+	
+	that gives the possibility to differentiates the energy involved between isobaric and isochoric reaction and look for the best choice in terms of industrial objectives. It is interesting to note that if the $\Delta$ of moles is zero. Isobaric or isochoric heat variations are equal and there is no a priori reason to prefer one or the other transformations.
+	
+	Obviously in practice the problem is to know the values of the different variables of the latter relation. These values can be found on huge databases that chemists have access to... This relationship is only very rarely used in practice and in any case it is based on too simplifying and restrictive assumptions to be of real practical interest.
+	
+	\subsection{Molar Quantities}
+	\textbf{Definitions (\#\mydef):}
+	\begin{enumerate}
+		\item[D1.] By convention, the "\NewTerm{mole}\index{mole}" is the quantity of substance of a system which contains as many chemical species as there are Carbon atoms in $12$ [g] of carbon $12$ (\SeeChapter{see section Nuclear Physics}).
+		
+		The number of carbon atoms contained in $12$ [g] is equal to the Avogadro's \underline{number} given approximately by:
+		
+		This means verbatim and by construction that a mole of water, of iron, of electron, respectively always contains a number of atoms equal to the Avogadro's number.
+		
+		Most of time the mole is simply denoted $n$ and has its value in $\mathbb{R}^{+}$.
+		
+		Note that with a mixed system it is a mathematical nonsense to do the sum of the molar masses of the constituents for the total molar mass. The molar mass is an intensive quantity!
+		\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+		\textbf{R1.} Hydrogen-1 was once used as a standard but given the inaccuracy that can occur because of its low mass, it was later disregarded. Once mass spectrometry was made available, physicists were using Carbon-12 for it's stability and abundance, and basically to stop everybody from fighting. Carbon-12 also more accurately defines a mass for hydrogen, and it is unbound in it's ground state and also is the most common and readily available isotope to have exactly the same number of protons and neutrons, 6 of each, and thus provides a perfect average when divided by the total number of protons and neutrons (electron is so small as to be considered negligible). \\
+		
+		\textbf{R2.} The "Avogadro project" aims to redefine Avogadro's constant (currently defined by the kilogram: the number of atoms in 12 g of Carbon-12) and reverse the relationship so that the kilogram is precisely specified by Avogadro's constant. This method required creating the most perfect sphere on Earth. It is made out of a single crystal of silicon 28 atoms. By carefully measuring the diameter, the volume can be precisely specified. Since the atom spacing of silicon is well known, the number of atoms in a sphere can be accurately calculated. This allows for a very precise determination of Avogadro's constant.
+		\end{tcolorbox}	
+		
+		\item[D2.] The "\NewTerm{molar mass (MM)}\index{molar mass}" is the mass of one mole of atoms of the chemical elements involved. Therefore by definition the molar mass of $\mathrm{C}_{12}$ is equal to $12$ grams (yes historically we use the gram to express molar mass because for application purposes is is obviously more convenient...
+		
+		\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+		We find these atomic molar masses in the periodic classification. But above all it must be known that those that are indicated take into account the natural isotopes (which is normal since they are chemically indistinguishable excepted for the nuclear chemist or nuclear physicist). So the value indicated in the tables is calculated as the sum of the respective proportions of the molar masses of the different corresponding isotopes (the validity of this method of calculation is obviously relative...).
+		\end{tcolorbox}	
+		
+		\item[D3.] The "\NewTerm{atomic molar mass}\index{atomic molar mass}" is the molar mass of a given element divided by the Avogadro number. Thus:
+		
+		Therefore the atomic (molar) mass is the mass of $1$ atom of a particular element and the molar mass is the mass of $1$ mole of an atom or molecule.
+		
+		We therefore have the following graph:
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics{img/chemistry/mole_mass_avogadro.jpg}
+			\end{center}	
+		\end{figure}
+		
+		\item[D4.] The "\NewTerm{Molecular molar mass (MMM)}\index{molecular molar mass}" is equal to the sum of the atomic molars  masses of the chemical elements that constitutes it.
+		
+		It comes therefore immediately the following observation: the mass $m$ of a sample consisting of an amount of $n$ moles of identical chemical species of molar mass $M_m$ is given by the relation:
+		
+		Somewhat in a little bit more formal way and in a thermodynamic aspect, here is also is how we can define the molar mass:
+		
+		Let $X$ be an extensive quantity on a single-phase system (see the section of Thermodynamics for precisions about the vocabulary used) and given a volume element $\mathrm{d}V$ of this system around a common point $M$ and containing the amount of material $\mathrm{d}n$. We associate it the extensive quantity $\mathrm{d}X$ proportional to $\mathrm{d}n$ such that:
+		
+		so that $X_m$ is an intensive quantity (ratio of two extensive quantities according to what was seen in the section of Thermodynamics) which we will name by definition the "\NewTerm{associated molar size}\index{associated molar size}" to $X$.
+		
+		We conclude that:
+		
+		the integral applying on the whole monophasic system.
+		
+		In the case of a uniform phase, $X_m$ being constant at any point, we can simply write the latter as:
+		
+		\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+		Basically the idea is to say that the mass of a single-phase chemical system is proportional to the molar mass of it to closely to a given integer factor representing the number of its constituents (or the number of moles to be more exact).
+		\end{tcolorbox}	
+		
+		\item[D5.] When the system is heterogeneous, we use the concept of "\NewTerm{mole fraction}\index{mole fraction}", defined by:
+		
+		$x_i$ being the mole fraction of a species $A_i$ whose the quantit of material (the number of moles for example) is $n_i$ with $n=\sum_i n_i$ being the total quantity of matter of the studied phase.
+		
+		As a result, for all chemical species of the studied phase, $\sum_i x_i=1$ which means that if there are $n$ chemical species, it is enough to  know $n-1$ molar titles to know them all.
+	
+		If the studied phase is a gas and assuming a perfect gas according to Boyle's law (approximation of the Van der Waals equation proved in the section of Statistical Mechanics) we have:
+		
+		we therefore have the possibility in the case of gaseous phases to express the mole fraction as:
+		
+		\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+		We can do obviously the same for the volume $V$.
+		\end{tcolorbox}	
+		
+		\item[D6.] We define the "\NewTerm{mass content associated with the species $A_i$}\index{mass content associated a species}" by the ration:
+		
+		with $m=\sum_i m_i$ being the total mass of the studied phase. We also have of course $\sum_i w_i=1$.
+		
+		\item[D7.] We define the "\NewTerm{volumic molar concentration}\index{volumic molar concentration}" or "\NewTerm{molarit}\index{molarit}" the ratio (do not confuse the notation with the specific heat):
+		
+		\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+		There are other composition variables used much less used than $x_i$ or $c_i$. We can cite the "\NewTerm{mass concentration density}\index{mass concentration density}" $m_i/V$, the "\NewTerm{molality}\index{molality}" (ratio of the amount of material of the species $A_i$ by the total mass of solvent), etc.
+		\end{tcolorbox}
+		
+		\item[D8.] We say that a (perfect) gas is in the "\NewTerm{standard state}\index{standard state}" if its pressure is equal to the standard pressure:
+		
+		
+		\item[D9.] We call "\NewTerm{standard molar quantity}\index{standard molar quantity}" of a constituent $X_m^\circ$ the value of the molar quantity of this same component taken in the standard state, that is to say under the pressure $P^\circ$.
+		\begin{tcolorbox}[title=Remarks,colframe=black,arc=10pt]
+		\textbf{R1.} Any standard molar quantity is obviously intensive: the pressure being set by the standard state , it depends only on the temperature.\\
+		
+		\textbf{R2.} Any standard quantity is denoted with the superscript "${}^\circ$". $V_m^\circ$ is then standard molar volume. For cons, the standard molar quantity is not always specified with the small index $m$, we must sometimes be careful with what is handled in the equations (as always anyway!).
+		\end{tcolorbox}	
+		In the case of the ideal gas, the molar volume is calculated using the ideal gas equation of state. Then we get:
+		
+		We see of course that the standard molar volume of an ideal gas depends on the temperature.
+		
+		If we do that calculation at the "\NewTerm{standard conditions of temperature and pressure}\index{standard conditions of temperature and pressure}" (abbreviated STP), that is to say at a temperature of $273.15$ [K] (i.e. $0$ [$^\circ$C]) and a pressure of $1$ [atm] (i.e. $101,325$ [kPa]), then we find a volume of $22.4$ [L$\cdot$mol$^{-1}$] which is a well known value by chemists.
+	\end{enumerate}
+	
+	\begin{tcolorbox}[title=Remarks,colframe=black,arc=10pt]
+	\textbf{R1.} In a wide range of temperatures and pressures, the molar volume of real gases is generally not very different from that of an ideal gas.\\
+	
+	\textbf{R2.} In the case of a condensed state, we do not have in general a state equation but we can measure the molar volume..
+	\end{tcolorbox}
+	We can define then by extension other standard quantities resulting from those we had defined in the section Thermodynamics:
+	\begin{enumerate}
+		\item The "\NewTerm{standard molar internal energy}\index{standard molar internal energy}" (intensive quantity as expressed by molar unit) and denoted by $U_m^\circ$.
+
+		\item The "\NewTerm{standard molar enthalpy}\index{standard molar enthalpy}" (intensive quantity as expressed by molar unit) with:
+		
+		It is important that the reader notice that the enthalpy depends only on the temperature (and the internal energy).
+	\end{enumerate}
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	For condensed states the standard volume is very low in S.I. units so that $H_m^\circ\cong U_m^\circ$. However, it is very difficult to speak of pressure for so condensed states so this approximation has to be used with caution.
+	\end{tcolorbox}	
+	If we now consider an extensive function $X$ (as for example the volume!) defined on a chemical gaseous evolving system. We can a priori express $X$ based on two intensive variables $T$, $P$ (because an extensive function is always a product or ratio of two intensive quantities, or a sum of extensive quantities) and of the different quantity of materials $n_i,{n'}_i$ of $A_i,{A'}_i$ such that:
+	
+	If all products (reagents and resulting one) are in their standard state, the extensive function, therefore denoted $X^\circ$, gets the form:
+	
+	where the pressure is no longer involved as attached to its standard value. The gas is then described by its temperature and the quantity of its constituents!
+	
+	However, if we consider an infinitesimal evolution of the system at constant temperature and pressure (because assume a very slow transformation) the different quantities of materials vary therefore following the exact total differential (\SeeChapter{see section of Differential Calculus and Integral}):
+	
+	where obviously are taken into account, as $T$ and $P$ are are supposed constant, only the quantity of materials that could vary (yes don't forget we are doing chemistry!!!).
+
+	We can then define artificially (nothing avoid us to do so, it's not false!) the intensive standard molar quantity that depends only on the temperature:
+	
+	Therefore:
+	
+	but we have also defined in the section Analytical Chemistry the relation:
+	
+	expressing, for recall, the variation in the quantity of matter of one of the compounds of a chemical reaction relatively toits stoichiometric ratio (constant) and the progress of the reaction. We therefore have:
+	
+	and also that:
+	
+	By definition, we name this algebraic sum "standard quantity reaction associated with the extensive function $X$" and denote it by (notation badly chosen by chemists in our point of view...):
+	
+	which is an intensive quantity that depends only on the temperature and represents a relative change (hence the subscript $r$!). This relation can also be written:
+	
+	In general, chemists name "\NewTerm{Lewis operator}\index{Lewis operator}", denoted $\Delta_r$, the derivative of a quantity $X$ (standardized or not), with respect to the progress of the reaction $\xi$ with constant temperature and pressure.
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	The symbol $\Delta_r$ appears with the letter $r$ in subscript to show that this is a relative reaction quantity. In other words, it is the standard variation of the molecular quantity during the concerned reaction for a given reaction progress of one mole at a pressure of $1$ bar for a perfect gas.
+	\end{tcolorbox}
+	We must also not forget that the stoichiometric coefficients of the reactants are positive and those of the resulting products are negative (\SeeChapter{see section of Analytical Chemistry}).
+
+	There are two reaction quantities that play important roles in chemistry:
+	\begin{enumerate}
+		\item The internal molar energy of reaction, named often "\NewTerm{internal energy of standard reaction}\index{internal energy of standard reaction}" of a chemical system:
+		
+
+		\item The molar enthalpy of reaction, often named more "\NewTerm{standard enthalpy of reaction}\index{standard enthalpy of reaction}" of a chemical system:
+		
+	\end{enumerate}
+	
+	\subsubsection{Standard enthalpy of reaction}
+	Therefore we can consider the following two cases after knowing the relation (\SeeChapter{see section Thermodynamics}):
+	
+	\begin{enumerate}
+		\item If the $A_i$ are in a condensed state, since the internal pressure does not apply we have:
+		
+		which still remains to be taken with precaution following the scenarios!
+
+		\item If the $A_i$ are in the gaseous state (assumed perfect gas):
+		
+	\end{enumerate}
+	We conclude that only gaz will intervene in this relation:
+	
+	That we write conventionally:
+	
+	It follows that in the special case where:
+	
+	(Which is in fact an unfortunate notation... for the algebraic sum of the stoichiometric ratio that would equal to zero) for a given temperature then we have:
+	
+	where it must be remembered that the stochiometric coefficients of the products are counted as positive, while those of the reactants are counted as negative (\SeeChapter{see section Analytical Chemistry}).
+	
+	Thus, the variation of the enthalpy function corresponds to the variation of the quantity of heat absorbed or emitted in an isobaric transformation at a given temperature $T$. This is why it is sometimes denoted $\Delta_r H_{T,P^\circ}$.
+
+	A chemical reaction that has an enthalpy reaction (which is for recall the instantaneous change in enthalpy during a reaction) that is negative is said to be "\NewTerm{exothermic}\index{exothermic}", since it releases heat into the environment (constant pressure obligedby the definition of enthalpy reaction!), then a chemical reaction whose reaction enthalpy is positive is say to be "\NewTerm{endothermic}\index{endothermic}" since it then requires a supply of heat to occur (so the vocabulary is the same as in the section of Thermodynamics).
+
+	Thus, according to the preceding developments, if we denote with an index $p$ the products and with an index $i$ the reactants, we often find the standard enthalpy of reaction as follows if the stochiometric coefficients are counted as positive:
+	
+	Into this form, then we see well that the standard reaction enthalpy corresponds to the difference partial molar enthalpies between the products and reactants of the transformation. This is nothing more than the "\NewTerm{Hess's law}\index{Hess's law}" set in the 19th century by the Swiss chemist Henri Hess. The law the states that the total enthalpy change during the complete course of a chemical reaction is the same whether the reaction is made in one step or in several steps and can be understood as an expression of the principle of conservation of energy, also expressed in the first law of thermodynamics, and the fact that the enthalpy of a chemical process is independent of the path taken from the initial to the final state (i.e. enthalpy is a state function).
+
+	Because in a system at equilibrium, the initial energy is always greater than or equal to the final energy (all systems tend to move towards to a more stable state with minimum energy as we have study it in the section of Thermdynamics), then the standard enthalpy of reaction $\Delta_r H^\circ$ may be only negative or zero.
+
+	If a chemical reaction at constant pressure and at a specific temperature gives only a single chemical compound (product) then the standard enthalpy of reaction is named  "\NewTerm{standard enthalpy of formation}\index{standard enthalpy of formation}" and is denoted by $\Delta_f H^\circ$.
+
+	In fact, the interest of prior-previous relation is that the chemist can simply, without having to know the quantities of material involved, determine just by knowing the stochiometric coefficients of an isobaric  gas or condensed chemical reaction (if he agrees that it will then be an approximation for the latter case) that the instantaneous variation of the molar internal energy during the progress of the reaction at a given temperature is equal to the instantaneous variation of the molar enthalpy .
+
+	Two different situations arise then:
+	\begin{enumerate}
+		\item The difference between the instantaneous variation of the molar internal energy and the molar enthalpy is zero: therefore, the chemical reaction (at a given temperature) does not instantaneously occupies a larger volume and thus don't loss energy to push ("unnecessarily") the pressure of the gas surrounding the studied reaction (this can be seen as a money saving in terms of energy in the chemical industry). In this case, the standard enthalpy of reaction is simply equal to the heat of reaction at constant pressure $Q_p$.
+
+		\item The difference between the instantaneous variation of the molar internal energy and the molar enthalpy is positive: Therefore, the chemical reaction (at the given temperature) instantly occupies a greater volume and thus loses some energy to push ("unnecessarily") the pressure of the gas surrounding the studied reaction  (this can be seen as a waste of money in terms of energy efficiency in the chemical industry).
+	\end{enumerate}
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	Obviously, it is possible to imagine a company that takes advantage of the change in volume of a reaction (case 2 above) that pushes the surrounding gas with a piston system to then produce mechanical energy... so it would be possible in certain situations to lose much less money (verbatim energy ...).
+	\end{tcolorbox}
+	However a small difficulty arise, ... the standard enthalpy of a simple pure body (body formed of a single type of atom) can not be calculated in absolute terms because it depends on the internal energy which is very difficult to calculate (you must use the tools of quantum physics which raise insurmountable problems even in the beginning of the 21st century). This means we must define an arbitrary scale of molar enthalpies by setting an arbitrary zero enthalpy and adopted internationally (which is unfortunately not the case as far as we know!).
+
+	Thus, in order to set up tables of standard molars enthalpy, he was chosen to define the scale of enthalpy as follows: the standard molar enthalpy of a simple steady pure body in the standard state is equal to $0$ at $298$ [K]. It follows that the enthalpy of formation of a simple standard pure body is always equal to zero.
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	\textbf{{\Large \ding{45}}Example:}\\\\
+	Given the reaction:
+	
+	That is to say, the dissociation of chlorine and phosphorus pentachloride in phosphorus trichloride. The tables give us at the temperature of $T=1000$ [K] the following value of the standard molar enthalpy of this reaction:
+	
+	The variation of the value of the molar enthalpy of reaction being positive, it follows that the reaction is endothermic (requires a heat input hence the dissociation temperature of $1000$ [K]) and therefore the product is more volatile than the initial reactant.
+
+	We have the following algebraic sum of the stochiometric coefficients of the reaction:
+	
+	That is (which is dimensionless since enthalpy is in molar value!):
+	
+	therefore the reaction increase the pressure by creating an additional mole per mole of reactant.
+
+	Since:
+	
+	\end{tcolorbox}
+	
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	then it comes:
+	
+	This is then the part of internal energy absorbed by the system on the $156 \;[\text{kJ}\cdot \text{mol}^{-1}]$. The remainder (difference) is has just been used to push the surrounding atmosphere of the chemical reactor.
+	\end{tcolorbox}
+	
+	\paragraph{Kirchhoff's Enthalpy Law}\mbox{}\\\\\
+	Kirchhoff's Enthalpy Law describes the enthalpy of a reaction's variation with temperature changes. In general, enthalpy of any substance increases with temperature, which means both the products and the reactants' enthalpies increase. The overall enthalpy of the reaction will change if the increase in the enthalpy of products and reactants is different.
+	
+	In other words, in a more practical way, the latent heat - energy required to evaporate a liquid - is not the same at every temperature! . The difference between the Gas and Liquid energy levels increases at higher temperatures. Thus, the Kirchhoff's Enthalpy law enables the calculation of a new latent heat from an existing one with a known temperature change.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.9]{img/chemistry/eirchooff_enthalpy_law.jpg}	
+		\caption{Kirchoff's enthalpy law illustration}
+	\end{figure}
+	So the Kirchhoff enthalpy law idea is to express the variations of the enthalpy of reaction (molar or not) in function of the temperature from the knowledge of the heat capacity at constant pressure of the gaseous reactants.
+
+	He have built in previous developments the following relation:
+	
+	which is the standard enthalpy of reaction at a given temperature in a system with a standard pressure.
+
+	We had also mentioned earlier above that $\Delta_r$, for recall, is somewhat an unfortunate notation for the differential (Lewis) operator of progress of the reaction $\mathrm{d}/\mathrm{d}\xi$.
+	
+	If we focus on the influence of the temperature $T$ on $\Delta_r H^\circ$ we have just to write the exact differential:
+	
+	since the algebraic variation of the standard enthalpy by definition depends only on the temperature.
+
+	The stochiometric coefficients $v_i$ are not dependent of the temperature at least until this latter does not changes the essence itself of the studied transformation.
+	
+	We then have under this approximation (assumption):
+	
+	Now we have defined in the section of Thermodynamics the heat capacity at constant pressure which is written:
+	
+	So if the conditions are standard (the enthalpy therefore depends only on the temperature), we get is the exact differential:
+	
+	Then we have:
+	
+	We can of course integrate the latter relations to get the common form use in practice and available in many books:
+	
+	Then we have:
+	
+	where $T_0$ is a particular temperature for which $\Delta H^\circ (T_0)$ is known.
+
+	In a temperature range very close to $T_0$ chemists sometimes approximate the variation as being linear. That is equivalent to put:
+	
+	It then immediately comes from the prior-previous relation:
+	
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	Quite often, the variation of the enthalpy of reaction with temperature is negligible!
+	\end{tcolorbox}
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	\textbf{{\Large \ding{45}}Example:}\\\\
+	For the reaction (graphite + oxygen yielding to carbon dioxide) we would like to know $\Delta_r H^\circ$ at $1000$ [K]:
+	
+	For this, it is given in the tables for this reaction at $298$ [K]:
+	
+	and:
+	
+	We write in lowercase the heat capacities above as the are enough subscripts to not add a third one ($m$) that mean these are molar heat capacities.
+	\begin{tcolorbox}[title=Remark,colframe=black,arc=10pt]
+	When the enthalpy of reaction is given at the reference temperature (nowadays...) at $298$ [K] chemists then speak as we have already mention earlier above the "standard enthalpy of formation".
+	\end{tcolorbox}
+	The value of the molar enthalpy of reaction being negative, it follows that the reaction is exothermic (it is tendency of nature to favor exothermic reactions to stabilize systems in their minimal energy states).
+	\end{tcolorbox}
+	
+	\begin{tcolorbox}[colframe=black,colback=white,sharp corners]
+	We then have immediately:
+	
+	Thus the variation is of $-560\;[\text{kJ}\cdot \text{mol}^{-1}]$, that is a variation of about $+0.1\%$. It follows that the higher the temperature increase, more is the reaction exothermic. In fact, the choice of this particular temperature of $1000$ [K] is not innocent because it is from this temperature that experiments shows that the reaction also produces carbon monoxide.
+	\end{tcolorbox}
+	We can also conclude that some exothermic reactions and having a enthalpy of reaction that decreases rapidly with temperature can blow up!
+	
+	Finally, let us indicate that in practice we often use the term "\NewTerm{calorific power}\index{calorific power}" or "\NewTerm{Heat of combustion}\index{Heat of combustion}" ,which is simply the fact ... the enthalpy  of reaction per unit mass of fuel or the energy obtained by combusting a kilogram of fuel.
+
+	Thus,  for Gasoline, we have following what give tables (under the assumption that this number is correct):
+	
+	And we can have fun by calculating the amount of Gasoline needed to accelerate a car of $1000$ [kg] from $0$ to $100\;[\text{km}\cdot \text{h}^{-1}]$ with a yield of $\eta=35\%$ at a temperature of $293$ [K]. Thus we have:
+	
+	and to get the amount of fuel in liters the tables give us the for Gasoline density about $700\;[\text{kg}\cdot \text{m}^{-3}]$ which gives finally a volume in liters of:
+	
+	
+	\begin{flushright}
+	\begin{tabular}{l c}
+	\circled{20} & \pbox{20cm}{\score{3}{5} \\ {\tiny 23 votes,  58.26\%}} 
+	\end{tabular} 
+	\end{flushright}
