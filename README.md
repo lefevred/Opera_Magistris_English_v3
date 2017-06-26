@@ -1,5 +1,5 @@
 # opera_magistris
-repository for the LaTeX source code and illustrations of the Opera Magistris compendium
+Conteneur du code source LaTeX et des illustrations de l'Opera Magistris compendium.
 
 Afin d'éviter que les enseignants de toute la planète réinventent la roue, il nous semble important de créer ce compendium (au format LaTeX) contenant les connaissances scientifiques basiques du XXIè siècle, qui pourront être utilisées librement afin d'enseigner.
 
