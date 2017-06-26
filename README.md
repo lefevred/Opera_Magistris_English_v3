@@ -1,10 +1,12 @@
 # opera_magistris
 repository for the LaTeX source code and illustrations of the Opera Magistris compendium
 
-To avoid that teachers around the world recreate the wheel it seemed important to us to create a LaTeX compendium with the basic scientific knowledge of the 21st century that can be reuse for free for teaching purposes.
+Afin d'éviter que les enseignants de toute la planète réinventent la roue, il nous semble important de créer ce compendium (au format LaTeX) contenant les connaissances scientifiques basiques du XXIè siècle, qui pourront être utilisées librement afin d'enseigner.
 
-As holy books (Bible, Quran, and so on...) are freely avalaible in many hotels, streets and libraries around the world it seemd also obvious to us to have and equivalent for pure science.
+Tout comme les livres sacrés (Bible, Quran, etc...) sont accessibles librement dans beaucoup d'hotels, dans les rues ou les librairies du monde entier, il nous a semblé évident d'avoir un équivalent pour la science.
 
-The source code and text is under Public License and therefore can be used, translated and distributed at free will.
+Le code source et le texte sont sous licence publique qui, de ce fait, peuvent être utilisés, traduits et distribués à volonté.
 
-It is only banned to use the text and content for religious propaganda.
+La seule restriction est : le texte et le contenu ne doivent pas être utilisé dans une propagande religieuse.
+
+Le document original, de Vincent Isoz, en anglais est disponible ici : https://github.com/vincentisoz/Opera_Magistris_English_v3
